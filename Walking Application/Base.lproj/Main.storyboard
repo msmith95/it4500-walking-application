@@ -40,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="-3606" y="-13"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Passport View Controller-->
         <scene sceneID="P9d-g8-sqE">
             <objects>
-                <collectionViewController id="q1t-rS-8pV" sceneMemberID="viewController">
+                <collectionViewController id="q1t-rS-8pV" customClass="PassportViewController" customModule="Walking_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xHq-7q-tH8">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="-3606" y="-929"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Journey List View Controller-->
         <scene sceneID="4Ne-8Q-isK">
             <objects>
-                <tableViewController id="wMA-i7-tU7" sceneMemberID="viewController">
+                <tableViewController id="wMA-i7-tU7" customClass="JourneyListViewController" customModule="Walking_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="GlR-4K-Auc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
