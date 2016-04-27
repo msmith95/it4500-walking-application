@@ -15,6 +15,8 @@
 		4CCEF5BA1CB6D1660059017C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCEF5B81CB6D1660059017C /* LaunchScreen.storyboard */; };
 		CD10785B1CCC530A00225D37 /* JourneyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10785A1CCC530A00225D37 /* JourneyListViewController.swift */; };
 		CD10785D1CCC534000225D37 /* PassportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10785C1CCC534000225D37 /* PassportViewController.swift */; };
+		CDE033C21CD15F3F0003C9F0 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C11CD15F3F0003C9F0 /* JourneyViewController.swift */; };
+		CDE033C41CD15F5F0003C9F0 /* PassportJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C31CD15F5F0003C9F0 /* PassportJourneyViewController.swift */; };
 		CDFCE24E1CCFE2210027FC8B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +31,8 @@
 		4CCEF5BB1CB6D1660059017C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD10785A1CCC530A00225D37 /* JourneyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyListViewController.swift; sourceTree = "<group>"; };
 		CD10785C1CCC534000225D37 /* PassportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassportViewController.swift; sourceTree = "<group>"; };
+		CDE033C11CD15F3F0003C9F0 /* JourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
+		CDE033C31CD15F5F0003C9F0 /* PassportJourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassportJourneyViewController.swift; sourceTree = "<group>"; };
 		CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,6 +70,8 @@
 				CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */,
 				4CCEF5AE1CB6D1660059017C /* ViewController.swift */,
 				4CCEF5B01CB6D1660059017C /* Main.storyboard */,
+				CDE033C31CD15F5F0003C9F0 /* PassportJourneyViewController.swift */,
+				CDE033C11CD15F3F0003C9F0 /* JourneyViewController.swift */,
 				CD10785C1CCC534000225D37 /* PassportViewController.swift */,
 				CD10785A1CCC530A00225D37 /* JourneyListViewController.swift */,
 				4CCEF5B61CB6D1660059017C /* Assets.xcassets */,
@@ -149,9 +155,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CCEF5AF1CB6D1660059017C /* ViewController.swift in Sources */,
+				CDE033C21CD15F3F0003C9F0 /* JourneyViewController.swift in Sources */,
 				CD10785B1CCC530A00225D37 /* JourneyListViewController.swift in Sources */,
 				CDFCE24E1CCFE2210027FC8B /* HealthKitManager.swift in Sources */,
 				CD10785D1CCC534000225D37 /* PassportViewController.swift in Sources */,
+				CDE033C41CD15F5F0003C9F0 /* PassportJourneyViewController.swift in Sources */,
 				4CCEF5AD1CB6D1660059017C /* AppDelegate.swift in Sources */,
 				4CCEF5B51CB6D1660059017C /* Walking_Application.xcdatamodeld in Sources */,
 			);

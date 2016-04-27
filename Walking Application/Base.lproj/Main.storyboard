@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="-2830" y="-13"/>
         </scene>
-        <!--View Controller-->
+        <!--Passport Journey View Controller-->
         <scene sceneID="7Dr-75-YD5">
             <objects>
-                <viewController id="3g5-BI-seM" sceneMemberID="viewController">
+                <viewController id="3g5-BI-seM" customClass="PassportJourneyViewController" customModule="Walking_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="H8K-B2-k8t"/>
                         <viewControllerLayoutGuide type="bottom" id="QaV-xH-9BH"/>
@@ -192,10 +192,10 @@
             </objects>
             <point key="canvasLocation" x="-2830" y="-929"/>
         </scene>
-        <!--View Controller-->
+        <!--Journey View Controller-->
         <scene sceneID="8aT-HV-ZTU">
             <objects>
-                <viewController id="FIl-zN-9Vc" sceneMemberID="viewController">
+                <viewController id="FIl-zN-9Vc" customClass="JourneyViewController" customModule="Walking_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wbb-O3-j3r"/>
                         <viewControllerLayoutGuide type="bottom" id="fiS-Tg-pCY"/>
