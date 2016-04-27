@@ -17,6 +17,7 @@
 		CD10785D1CCC534000225D37 /* PassportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10785C1CCC534000225D37 /* PassportViewController.swift */; };
 		CDE033C21CD15F3F0003C9F0 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C11CD15F3F0003C9F0 /* JourneyViewController.swift */; };
 		CDE033C41CD15F5F0003C9F0 /* PassportJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C31CD15F5F0003C9F0 /* PassportJourneyViewController.swift */; };
+		CDE033C61CD163690003C9F0 /* NoJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C51CD163690003C9F0 /* NoJourneyViewController.swift */; };
 		CDFCE24E1CCFE2210027FC8B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		CD10785C1CCC534000225D37 /* PassportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassportViewController.swift; sourceTree = "<group>"; };
 		CDE033C11CD15F3F0003C9F0 /* JourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
 		CDE033C31CD15F5F0003C9F0 /* PassportJourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassportJourneyViewController.swift; sourceTree = "<group>"; };
+		CDE033C51CD163690003C9F0 /* NoJourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoJourneyViewController.swift; sourceTree = "<group>"; };
 		CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */,
 				4CCEF5AE1CB6D1660059017C /* ViewController.swift */,
 				4CCEF5B01CB6D1660059017C /* Main.storyboard */,
+				CDE033C51CD163690003C9F0 /* NoJourneyViewController.swift */,
 				CDE033C31CD15F5F0003C9F0 /* PassportJourneyViewController.swift */,
 				CDE033C11CD15F3F0003C9F0 /* JourneyViewController.swift */,
 				CD10785C1CCC534000225D37 /* PassportViewController.swift */,
@@ -160,6 +163,7 @@
 				CDFCE24E1CCFE2210027FC8B /* HealthKitManager.swift in Sources */,
 				CD10785D1CCC534000225D37 /* PassportViewController.swift in Sources */,
 				CDE033C41CD15F5F0003C9F0 /* PassportJourneyViewController.swift in Sources */,
+				CDE033C61CD163690003C9F0 /* NoJourneyViewController.swift in Sources */,
 				4CCEF5AD1CB6D1660059017C /* AppDelegate.swift in Sources */,
 				4CCEF5B51CB6D1660059017C /* Walking_Application.xcdatamodeld in Sources */,
 			);

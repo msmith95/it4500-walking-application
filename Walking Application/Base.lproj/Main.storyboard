@@ -70,7 +70,9 @@
                             <outlet property="delegate" destination="q1t-rS-8pV" id="gSD-j6-WVm"/>
                         </connections>
                     </collectionView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="Izi-0p-1MI"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="3g5-BI-seM" kind="show" id="Xtr-pP-cr1">
                             <nil key="action"/>
@@ -168,7 +170,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mKS-QI-XSc">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mKS-QI-XSc" id="Fe3-Tz-y9y">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -191,6 +193,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAb-26-WgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2830" y="-929"/>
+        </scene>
+        <!--No Journey View Controller-->
+        <scene sceneID="Xzb-5c-twx">
+            <objects>
+                <viewController id="zV4-Iq-0gp" customClass="NoJourneyViewController" customModule="Walking_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hLh-bH-hoy"/>
+                        <viewControllerLayoutGuide type="bottom" id="zDX-IO-9B8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zyi-GP-qRz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4N-Ai-miZ">
+                                <rect key="frame" x="279" y="289" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="w4N-Ai-miZ" firstAttribute="centerX" secondItem="zyi-GP-qRz" secondAttribute="centerX" id="0L9-vH-da5"/>
+                            <constraint firstItem="w4N-Ai-miZ" firstAttribute="centerY" secondItem="zyi-GP-qRz" secondAttribute="centerY" id="dfi-oc-r5O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="NoJourneyLabel" destination="w4N-Ai-miZ" id="Kwj-Wc-Pgd"/>
+                        <outlet property="NoJourneySelectedInfo" destination="dfi-oc-r5O" id="1eO-QD-8KW"/>
+                        <segue destination="wMA-i7-tU7" kind="show" id="Oe4-SQ-BkT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="di4-v9-6Lw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1383" y="-2141"/>
         </scene>
         <!--Journey View Controller-->
         <scene sceneID="8aT-HV-ZTU">
@@ -237,10 +274,16 @@
                             <constraint firstItem="kio-Lr-gJe" firstAttribute="centerX" secondItem="fMo-kn-h7H" secondAttribute="centerX" id="xbt-9W-Wqh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="zV4-Iq-0gp" kind="show" id="SZc-mM-Z0n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r8k-zL-kN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2117" y="-929"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Oe4-SQ-BkT"/>
+    </inferredMetricsTieBreakers>
 </document>
