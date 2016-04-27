@@ -18,6 +18,7 @@
 		CDE033C41CD15F5F0003C9F0 /* PassportJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C31CD15F5F0003C9F0 /* PassportJourneyViewController.swift */; };
 		CDE033C61CD163690003C9F0 /* NoJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C51CD163690003C9F0 /* NoJourneyViewController.swift */; };
 		CDFCE24E1CCFE2210027FC8B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */; };
+		D6093E461CD1699A00B3FB0E /* Walking_Application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6093E441CD1699A00B3FB0E /* Walking_Application.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		CDE033C31CD15F5F0003C9F0 /* PassportJourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassportJourneyViewController.swift; sourceTree = "<group>"; };
 		CDE033C51CD163690003C9F0 /* NoJourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoJourneyViewController.swift; sourceTree = "<group>"; };
 		CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		D6093E451CD1699A00B3FB0E /* Walking_Application.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Walking_Application.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		4CCEF5AB1CB6D1660059017C /* Walking Application */ = {
 			isa = PBXGroup;
 			children = (
+				D6093E441CD1699A00B3FB0E /* Walking_Application.xcdatamodeld */,
 				4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */,
 				CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */,
 				4CCEF5AE1CB6D1660059017C /* ViewController.swift */,
@@ -162,6 +165,7 @@
 				CDE033C41CD15F5F0003C9F0 /* PassportJourneyViewController.swift in Sources */,
 				CDE033C61CD163690003C9F0 /* NoJourneyViewController.swift in Sources */,
 				4CCEF5AD1CB6D1660059017C /* AppDelegate.swift in Sources */,
+				D6093E461CD1699A00B3FB0E /* Walking_Application.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +326,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D6093E441CD1699A00B3FB0E /* Walking_Application.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D6093E451CD1699A00B3FB0E /* Walking_Application.xcdatamodel */,
+			);
+			currentVersion = D6093E451CD1699A00B3FB0E /* Walking_Application.xcdatamodel */;
+			path = Walking_Application.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4CCEF5A11CB6D1650059017C /* Project object */;
 }
