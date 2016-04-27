@@ -15,6 +15,7 @@
 		4CCEF5BA1CB6D1660059017C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCEF5B81CB6D1660059017C /* LaunchScreen.storyboard */; };
 		CD10785B1CCC530A00225D37 /* JourneyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10785A1CCC530A00225D37 /* JourneyListViewController.swift */; };
 		CD10785D1CCC534000225D37 /* PassportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10785C1CCC534000225D37 /* PassportViewController.swift */; };
+		CDFCE24E1CCFE2210027FC8B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4CCEF5BB1CB6D1660059017C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD10785A1CCC530A00225D37 /* JourneyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyListViewController.swift; sourceTree = "<group>"; };
 		CD10785C1CCC534000225D37 /* PassportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassportViewController.swift; sourceTree = "<group>"; };
+		CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */,
+				CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */,
 				4CCEF5AE1CB6D1660059017C /* ViewController.swift */,
 				4CCEF5B01CB6D1660059017C /* Main.storyboard */,
 				CD10785C1CCC534000225D37 /* PassportViewController.swift */,
@@ -105,6 +108,7 @@
 				TargetAttributes = {
 					4CCEF5A81CB6D1650059017C = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6SDDW65UGG;
 					};
 				};
 			};
@@ -146,6 +150,7 @@
 			files = (
 				4CCEF5AF1CB6D1660059017C /* ViewController.swift in Sources */,
 				CD10785B1CCC530A00225D37 /* JourneyListViewController.swift in Sources */,
+				CDFCE24E1CCFE2210027FC8B /* HealthKitManager.swift in Sources */,
 				CD10785D1CCC534000225D37 /* PassportViewController.swift in Sources */,
 				4CCEF5AD1CB6D1660059017C /* AppDelegate.swift in Sources */,
 				4CCEF5B51CB6D1660059017C /* Walking_Application.xcdatamodeld in Sources */,
@@ -263,10 +268,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Walking Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.cs.Walking-Application";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -274,10 +282,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Walking Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.cs.Walking-Application";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
