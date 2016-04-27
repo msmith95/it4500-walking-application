@@ -10,6 +10,11 @@ import UIKit
 
 class PassportJourneyViewController: UIViewController {
 
+    @IBOutlet weak var mileProgress: UILabel!
+    @IBOutlet weak var stepsProgress: UILabel!
+    @IBOutlet weak var journeyTitle: UILabel!
+    @IBOutlet weak var journeyDescription: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

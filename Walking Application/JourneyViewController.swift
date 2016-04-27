@@ -10,6 +10,11 @@ import UIKit
 
 class JourneyViewController: UIViewController {
 
+    @IBOutlet weak var journeyDescription: UILabel!
+    @IBOutlet weak var journeyDistance: UILabel!
+    @IBOutlet weak var journeyStart: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

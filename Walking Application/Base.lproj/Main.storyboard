@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="leC-zG-pVb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FIl-zN-9Vc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -138,6 +138,12 @@
                             <constraint firstItem="uzu-tl-pKM" firstAttribute="centerX" secondItem="9ca-KO-nux" secondAttribute="centerX" id="vTM-LJ-7g8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="journeyDescription" destination="R2N-4E-QHA" id="0bd-Pc-fxV"/>
+                        <outlet property="journeyTitle" destination="6JC-Jw-aWf" id="9Sw-PR-Iri"/>
+                        <outlet property="mileProgress" destination="uzu-tl-pKM" id="abs-FL-YGS"/>
+                        <outlet property="stepsProgress" destination="CfA-YX-NxT" id="21Y-ec-OdS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Xg-cf-hZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -212,11 +218,17 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMX-V8-f9S">
+                                <rect key="frame" x="546" y="20" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="w4N-Ai-miZ" firstAttribute="centerX" secondItem="zyi-GP-qRz" secondAttribute="centerX" id="0L9-vH-da5"/>
+                            <constraint firstItem="IMX-V8-f9S" firstAttribute="top" secondItem="hLh-bH-hoy" secondAttribute="bottom" id="Ew2-bN-n3F"/>
                             <constraint firstItem="w4N-Ai-miZ" firstAttribute="centerY" secondItem="zyi-GP-qRz" secondAttribute="centerY" id="dfi-oc-r5O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IMX-V8-f9S" secondAttribute="trailing" id="vNs-nO-9jG"/>
                         </constraints>
                     </view>
                     <connections>
@@ -275,6 +287,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="journeyDescription" destination="5sX-BJ-OBy" id="fJq-CN-l4l"/>
+                        <outlet property="journeyDistance" destination="fMo-kn-h7H" id="AlL-SV-KMo"/>
+                        <outlet property="journeyStart" destination="kio-Lr-gJe" id="Fz1-As-vDN"/>
                         <segue destination="zV4-Iq-0gp" kind="show" id="SZc-mM-Z0n"/>
                     </connections>
                 </viewController>
