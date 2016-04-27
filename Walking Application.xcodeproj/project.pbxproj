@@ -19,6 +19,7 @@
 		CDE033C61CD163690003C9F0 /* NoJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C51CD163690003C9F0 /* NoJourneyViewController.swift */; };
 		CDFCE24E1CCFE2210027FC8B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */; };
 		D6093E461CD1699A00B3FB0E /* Walking_Application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6093E441CD1699A00B3FB0E /* Walking_Application.xcdatamodeld */; };
+		D6093E4A1CD16A9F00B3FB0E /* DataPassing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6093E491CD16A9F00B3FB0E /* DataPassing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		CDE033C51CD163690003C9F0 /* NoJourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoJourneyViewController.swift; sourceTree = "<group>"; };
 		CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		D6093E451CD1699A00B3FB0E /* Walking_Application.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Walking_Application.xcdatamodel; sourceTree = "<group>"; };
+		D6093E491CD16A9F00B3FB0E /* DataPassing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPassing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		4CCEF5AB1CB6D1660059017C /* Walking Application */ = {
 			isa = PBXGroup;
 			children = (
+				D6093E491CD16A9F00B3FB0E /* DataPassing.swift */,
 				D6093E441CD1699A00B3FB0E /* Walking_Application.xcdatamodeld */,
 				4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */,
 				CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */,
@@ -166,6 +169,7 @@
 				CDE033C61CD163690003C9F0 /* NoJourneyViewController.swift in Sources */,
 				4CCEF5AD1CB6D1660059017C /* AppDelegate.swift in Sources */,
 				D6093E461CD1699A00B3FB0E /* Walking_Application.xcdatamodeld in Sources */,
+				D6093E4A1CD16A9F00B3FB0E /* DataPassing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +287,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Walking Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.cs.Walking-Application";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,6 +302,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Walking Application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.cs.Walking-Application";
 				PRODUCT_NAME = "$(TARGET_NAME)";
