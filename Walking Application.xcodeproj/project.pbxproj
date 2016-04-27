@@ -10,7 +10,6 @@
 		4CCEF5AD1CB6D1660059017C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */; };
 		4CCEF5AF1CB6D1660059017C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEF5AE1CB6D1660059017C /* ViewController.swift */; };
 		4CCEF5B21CB6D1660059017C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCEF5B01CB6D1660059017C /* Main.storyboard */; };
-		4CCEF5B51CB6D1660059017C /* Walking_Application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEF5B31CB6D1660059017C /* Walking_Application.xcdatamodeld */; };
 		4CCEF5B71CB6D1660059017C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCEF5B61CB6D1660059017C /* Assets.xcassets */; };
 		4CCEF5BA1CB6D1660059017C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCEF5B81CB6D1660059017C /* LaunchScreen.storyboard */; };
 		CD10785B1CCC530A00225D37 /* JourneyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10785A1CCC530A00225D37 /* JourneyListViewController.swift */; };
@@ -26,7 +25,6 @@
 		4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CCEF5AE1CB6D1660059017C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CCEF5B11CB6D1660059017C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4CCEF5B41CB6D1660059017C /* Walking_Application.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Walking_Application.xcdatamodel; sourceTree = "<group>"; };
 		4CCEF5B61CB6D1660059017C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CCEF5B91CB6D1660059017C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4CCEF5BB1CB6D1660059017C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,7 +78,6 @@
 				4CCEF5B61CB6D1660059017C /* Assets.xcassets */,
 				4CCEF5B81CB6D1660059017C /* LaunchScreen.storyboard */,
 				4CCEF5BB1CB6D1660059017C /* Info.plist */,
-				4CCEF5B31CB6D1660059017C /* Walking_Application.xcdatamodeld */,
 			);
 			path = "Walking Application";
 			sourceTree = "<group>";
@@ -165,7 +162,6 @@
 				CDE033C41CD15F5F0003C9F0 /* PassportJourneyViewController.swift in Sources */,
 				CDE033C61CD163690003C9F0 /* NoJourneyViewController.swift in Sources */,
 				4CCEF5AD1CB6D1660059017C /* AppDelegate.swift in Sources */,
-				4CCEF5B51CB6D1660059017C /* Walking_Application.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,19 +322,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		4CCEF5B31CB6D1660059017C /* Walking_Application.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				4CCEF5B41CB6D1660059017C /* Walking_Application.xcdatamodel */,
-			);
-			currentVersion = 4CCEF5B41CB6D1660059017C /* Walking_Application.xcdatamodel */;
-			path = Walking_Application.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 4CCEF5A11CB6D1650059017C /* Project object */;
 }
