@@ -12,6 +12,43 @@ import CoreData
 class DataPassing: NSObject {
     
     var date = [NSManagedObject]()
+    var journeys:[Journey] = Array<Journey>()//new photo array
+    
+    private func loadFromJSONFile(fileName: String) {//: builds a new object
+        let bundle = NSBundle.mainBundle()//points to its own self bundle
+        if let path = bundle.pathForResource(fileName, ofType: "json"), jsonData = NSData(contentsOfFile: path) {
+            parseJson(jsonData)//gets the photo.json file -- (compound if let statement) if 1 fails both fail
+        }//both need to be true or fails
+    }
+    private func parseJson(jsonData: NSData) {
+        journeys = Array<Journey>()//emptys array
+        var jsonResultWrapped: NSDictionary?//
+        do {//do try catch
+            jsonResultWrapped = try NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers) as? NSDictionary//casts as NSDictionary
+        } catch {
+            return
+        }
+        
+        if let jsonResult = jsonResultWrapped where jsonResult.count > 0 {//makes sure there is results
+            if let status = jsonResult["status"] as? String where status == "ok" {//checks status
+                if let journeyList = jsonResult["photos"] as? NSArray {//casts photo array as a NSArray
+                    for journeys in journeyList{
+                        if let journeyName = journeys["journeyName"] as? String,
+                            journeyID = journeys["journeyId"] as? Int,
+                            description = journeys["description"] as? String,
+                            steps = journeys["steps"] as? Double,
+                            distance = journeys["distance"] as? Double
+                            {
+                            
+                            self.journeys.append(Journey(journeyName: journeyName, journeyID: journeyID, description: description,
+                                steps: steps, distance: distance))
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     
     /*
     func loadNotes(){
