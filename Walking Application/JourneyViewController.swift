@@ -10,6 +10,7 @@ import UIKit
 
 class JourneyViewController: UIViewController {
 
+    @IBOutlet weak var journeyProgress: UIProgressView!
     @IBOutlet weak var journeyDescription: UILabel!
     @IBOutlet weak var journeyDistance: UILabel!
     @IBOutlet weak var journeyStart: UIButton!
@@ -17,6 +18,10 @@ class JourneyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // check core data for in-progress journey
+        // if no, segue to no journey view
+        // else load json into labels
 
         // Do any additional setup after loading the view.
     }
