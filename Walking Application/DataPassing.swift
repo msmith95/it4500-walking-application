@@ -8,8 +8,15 @@
 
 import UIKit
 import CoreData
+import Foundation
 
-class DataPassing: NSObject {
+class DataPassing {
+    
+    static let sharedInstance = DataPassing(fileName: "journeys")
+    
+    private init(fileName: String){
+        loadFromJSONFile(fileName)
+    }
     
     var date = [NSManagedObject]()
     var journeys:[Journey] = Array<Journey>()//new photo array
@@ -31,10 +38,10 @@ class DataPassing: NSObject {
         
         if let jsonResult = jsonResultWrapped where jsonResult.count > 0 {//makes sure there is results
             if let status = jsonResult["status"] as? String where status == "ok" {//checks status
-                if let journeyList = jsonResult["photos"] as? NSArray {//casts photo array as a NSArray
+                if let journeyList = jsonResult["journeys"] as? NSArray {//casts photo array as a NSArray
                     for journeys in journeyList{
                         if let journeyName = journeys["journeyName"] as? String,
-                            journeyID = journeys["journeyId"] as? Int,
+                            journeyID = journeys["journeyID"] as? Int,
                             description = journeys["description"] as? String,
                             steps = journeys["steps"] as? Double,
                             distance = journeys["distance"] as? Double
