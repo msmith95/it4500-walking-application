@@ -81,7 +81,31 @@ class DataPasser: NSObject {
     }
     
     
-
+    
+    
+    //THIS GOES ONTO A VIEW CONTROLLER TO SAVE DATA
+    
+    /*@IBAction func saveData(sender: AnyObject) {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        
+        if journey == nil {
+            let noteEntity =  NSEntityDescription.entityForName("JourneyInProgress", inManagedObjectContext: managedContext)
+            journey = NSManagedObject(entity: noteEntity!, insertIntoManagedObjectContext:managedContext)
+        }
+        
+        journey?.setValue(NSDate(), forKey: "endDate")
+        journey?.setValue(NSDate(), forKey: "startDate")
+        journey?.setValue(1, forKey: "journeyID")
+        journey?.setValue(999, forKey: "steps")
+        
+        // Complete save and handle potential error
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+    }*/
     
     
     
