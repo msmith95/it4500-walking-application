@@ -14,15 +14,13 @@ class DataPassing {
     
     static let sharedInstance = DataPassing(fileName: "journeys")
     
+    
+    
+   
     private init(fileName: String){
         loadFromJSONFile(fileName)
     }
     
-    static let sharedInstance = DataPassing(fileName: "photos")//a singleton a single instance of a object
-    
-    private init(fileName:String) {//constructor
-        loadFromJSONFile(fileName)
-    }
     var journeys:[Journey] = Array<Journey>()//new photo array
     
     private func loadFromJSONFile(fileName: String) {//: builds a new object
@@ -96,10 +94,10 @@ class DataPassing {
         
         do {
             let fetchedResults =
-            try managedContext.executeFetchRequest(fetchRequest) as? [NSManagedObject]
+            try managedContext.executeFetchRequest(fetchRequest) as? [Journey]
             
             if let results = fetchedResults {
-                date = results
+                journeys = results
                 print(results)
             } else {
                 print("Could not fetch Date")

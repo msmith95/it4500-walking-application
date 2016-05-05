@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class DataPassing: NSObject {
+class DataPasser: NSObject {
     
     var date = [NSManagedObject]()
     
