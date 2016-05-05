@@ -18,7 +18,11 @@ class DataPassing {
         loadFromJSONFile(fileName)
     }
     
-    var date = [NSManagedObject]()
+    static let sharedInstance = DataPassing(fileName: "photos")//a singleton a single instance of a object
+    
+    private init(fileName:String) {//constructor
+        loadFromJSONFile(fileName)
+    }
     var journeys:[Journey] = Array<Journey>()//new photo array
     
     private func loadFromJSONFile(fileName: String) {//: builds a new object
