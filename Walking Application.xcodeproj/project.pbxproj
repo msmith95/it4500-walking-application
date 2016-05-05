@@ -19,6 +19,7 @@
 		CDE033C61CD163690003C9F0 /* NoJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C51CD163690003C9F0 /* NoJourneyViewController.swift */; };
 		CDFCE24E1CCFE2210027FC8B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */; };
 		D2A6564B1CD1796B00F68B33 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6564A1CD1796B00F68B33 /* Journey.swift */; };
+		D2F73DB81CDBBB930052EB03 /* dataPasser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F73DB71CDBBB930052EB03 /* dataPasser.swift */; };
 		D6093E461CD1699A00B3FB0E /* Walking_Application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6093E441CD1699A00B3FB0E /* Walking_Application.xcdatamodeld */; };
 		D6093E4A1CD16A9F00B3FB0E /* DataPassing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6093E491CD16A9F00B3FB0E /* DataPassing.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +39,7 @@
 		CDE033C51CD163690003C9F0 /* NoJourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoJourneyViewController.swift; sourceTree = "<group>"; };
 		CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		D2A6564A1CD1796B00F68B33 /* Journey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
+		D2F73DB71CDBBB930052EB03 /* dataPasser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataPasser.swift; sourceTree = "<group>"; };
 		D6093E451CD1699A00B3FB0E /* Walking_Application.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Walking_Application.xcdatamodel; sourceTree = "<group>"; };
 		D6093E491CD16A9F00B3FB0E /* DataPassing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPassing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				D6093E491CD16A9F00B3FB0E /* DataPassing.swift */,
+				D2F73DB71CDBBB930052EB03 /* dataPasser.swift */,
 				D2A6564A1CD1796B00F68B33 /* Journey.swift */,
 				D6093E441CD1699A00B3FB0E /* Walking_Application.xcdatamodeld */,
 				4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */,
@@ -170,6 +173,7 @@
 				CDFCE24E1CCFE2210027FC8B /* HealthKitManager.swift in Sources */,
 				CD10785D1CCC534000225D37 /* PassportViewController.swift in Sources */,
 				CDE033C41CD15F5F0003C9F0 /* PassportJourneyViewController.swift in Sources */,
+				D2F73DB81CDBBB930052EB03 /* dataPasser.swift in Sources */,
 				CDE033C61CD163690003C9F0 /* NoJourneyViewController.swift in Sources */,
 				4CCEF5AD1CB6D1660059017C /* AppDelegate.swift in Sources */,
 				D6093E461CD1699A00B3FB0E /* Walking_Application.xcdatamodeld in Sources */,
