@@ -54,6 +54,22 @@ class DataPassing {
             }
         }
     }
+    func filter(searchText: String) -> Array<Journey> {
+        if searchText.isEmpty {
+            return journeys
+        }
+        
+        var filteredJourneys = Array<Journey>()
+        
+        for journey in journeys {
+            if journey.journeyName.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil {
+                filteredJourneys.append(journey)
+            } else if journey.description.rangeOfString(searchText, options: .CaseInsensitiveSearch) != nil {
+                filteredJourneys.append(journey)
+            }
+        }
+        return filteredJourneys
+    }
 
     
     /*

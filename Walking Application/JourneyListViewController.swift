@@ -19,6 +19,8 @@ class JourneyListViewController: UITableViewController {
         super.viewDidLoad()
         
         self.title = "Journey List"
+        
+        filteredJourneys = journeyCollection.journeys
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -41,7 +43,8 @@ class JourneyListViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        //return filteredJourneys.count
+        return journeyCollection.journeys.count
     }
 
     
