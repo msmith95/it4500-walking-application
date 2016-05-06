@@ -1,38 +1,18 @@
 //
-//  JourneyViewController.swift
+//  TabBarViewController.swift
 //  Walking Application
 //
-//  Created by Seth vonSeggern on 4/27/16.
+//  Created by Seth vonSeggern on 5/5/16.
 //  Copyright © 2016 Walking Team A. All rights reserved.
 //
 
 import UIKit
 
-var journey:Journey?
+class TabBarViewController: UITabBarController {
 
-class JourneyViewController: UIViewController {
-
-    @IBOutlet weak var journeyProgress: UIProgressView!
-    @IBOutlet weak var journeyDescription: UILabel!
-    @IBOutlet weak var journeyDistance: UILabel!
-    @IBOutlet weak var journeyStart: UIButton!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = "Journey"
-        
-        if let j = journey {
-            
-            journeyDescription.text = j.description
-            
-        }
-       
-        
-        // check core data for in-progress journey
-        // if no, segue to no journey view
-        // else load json into labels
+        self.tabBarController?.selectedIndex = 0
 
         // Do any additional setup after loading the view.
     }

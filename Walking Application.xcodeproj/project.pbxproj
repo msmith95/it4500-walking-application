@@ -14,6 +14,7 @@
 		4CCEF5BA1CB6D1660059017C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCEF5B81CB6D1660059017C /* LaunchScreen.storyboard */; };
 		CD10785B1CCC530A00225D37 /* JourneyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10785A1CCC530A00225D37 /* JourneyListViewController.swift */; };
 		CD10785D1CCC534000225D37 /* PassportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10785C1CCC534000225D37 /* PassportViewController.swift */; };
+		CDBC9F311CDC1EF9003716AA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBC9F301CDC1EF9003716AA /* TabBarViewController.swift */; };
 		CDE033C21CD15F3F0003C9F0 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C11CD15F3F0003C9F0 /* JourneyViewController.swift */; };
 		CDE033C41CD15F5F0003C9F0 /* PassportJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C31CD15F5F0003C9F0 /* PassportJourneyViewController.swift */; };
 		CDE033C61CD163690003C9F0 /* NoJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C51CD163690003C9F0 /* NoJourneyViewController.swift */; };
@@ -36,6 +37,7 @@
 		4CCEF5BB1CB6D1660059017C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD10785A1CCC530A00225D37 /* JourneyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyListViewController.swift; sourceTree = "<group>"; };
 		CD10785C1CCC534000225D37 /* PassportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassportViewController.swift; sourceTree = "<group>"; };
+		CDBC9F301CDC1EF9003716AA /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CDE033C11CD15F3F0003C9F0 /* JourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
 		CDE033C31CD15F5F0003C9F0 /* PassportJourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassportJourneyViewController.swift; sourceTree = "<group>"; };
 		CDE033C51CD163690003C9F0 /* NoJourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoJourneyViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */,
 				4CCEF5AE1CB6D1660059017C /* ViewController.swift */,
 				4CCEF5B01CB6D1660059017C /* Main.storyboard */,
+				CDBC9F301CDC1EF9003716AA /* TabBarViewController.swift */,
 				CDE033C51CD163690003C9F0 /* NoJourneyViewController.swift */,
 				CDE033C31CD15F5F0003C9F0 /* PassportJourneyViewController.swift */,
 				CDE033C11CD15F3F0003C9F0 /* JourneyViewController.swift */,
@@ -177,6 +180,7 @@
 				D2A6564B1CD1796B00F68B33 /* Journey.swift in Sources */,
 				CDE033C21CD15F3F0003C9F0 /* JourneyViewController.swift in Sources */,
 				CD10785B1CCC530A00225D37 /* JourneyListViewController.swift in Sources */,
+				CDBC9F311CDC1EF9003716AA /* TabBarViewController.swift in Sources */,
 				CDFCE24E1CCFE2210027FC8B /* HealthKitManager.swift in Sources */,
 				CDEB2A2F1CDBC6C3001A07DF /* JourneyListTableViewCell.swift in Sources */,
 				CD10785D1CCC534000225D37 /* PassportViewController.swift in Sources */,

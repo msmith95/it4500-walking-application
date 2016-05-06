@@ -13,6 +13,7 @@ class JourneyListViewController: UITableViewController {
     var filteredJourneys: [Journey]!
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         self.title = "Journey List"
