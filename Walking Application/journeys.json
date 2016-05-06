@@ -1,0 +1,19 @@
+{
+	"status": "ok",
+	"journeys":[
+		{
+			"journeyName" : "journey 1",
+			"journeyID" : 0,
+			"description" : "This is the description for journey 1",
+			"steps" : 1000,
+			"distance" : 1
+		},
+		{
+			"journeyName" : "journey 2",
+			"journeyID" : 1,
+			"description" : "This is the description for journey 2",
+			"steps" : 2000,
+			"distance" : 2
+		},
+	]
+}

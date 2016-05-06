@@ -8,9 +8,10 @@
 
 import UIKit
 
-var journey:Journey?
+
 
 class JourneyViewController: UIViewController {
+    var journey:Journey?
 
     @IBOutlet weak var journeyProgress: UIProgressView!
     @IBOutlet weak var journeyDescription: UILabel!
