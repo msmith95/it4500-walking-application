@@ -27,6 +27,8 @@ class JourneyViewController: UIViewController {
         if let j = journey {
             
             journeyDescription.text = j.description
+            journeyDistance.text = String(j.distance)
+            
             
         }
        
