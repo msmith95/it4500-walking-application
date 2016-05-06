@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FIl-zN-9Vc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="leC-zG-pVb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -153,7 +153,7 @@
         <scene sceneID="BdY-zI-a2m">
             <objects>
                 <navigationController id="5Qd-7h-QF4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" id="bh7-v3-xOc"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="bh7-v3-xOc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dBq-qf-xOF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -175,8 +175,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mKS-QI-XSc">
-                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="mKS-QI-XSc" customClass="JouneyListTableViewCell" customModule="Walking_Application" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mKS-QI-XSc" id="Fe3-Tz-y9y">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -185,17 +185,21 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPT-Gw-0YP">
                                             <rect key="frame" x="8" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kDU-Lp-h75">
                                             <rect key="frame" x="550" y="11" width="42" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="journeyDistance" destination="kDU-Lp-h75" id="xvv-JI-1hP"/>
+                                    <outlet property="journeyName" destination="QPT-Gw-0YP" id="2Ky-38-h0M"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -248,12 +252,12 @@
                     <connections>
                         <outlet property="NoJourneyLabel" destination="w4N-Ai-miZ" id="Kwj-Wc-Pgd"/>
                         <outlet property="NoJourneySelectedInfo" destination="dfi-oc-r5O" id="1eO-QD-8KW"/>
-                        <segue destination="wMA-i7-tU7" kind="show" id="Oe4-SQ-BkT"/>
+                        <segue destination="wMA-i7-tU7" kind="show" id="rQT-FG-cS9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="di4-v9-6Lw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1383" y="-2141"/>
+            <point key="canvasLocation" x="-1387" y="-1793"/>
         </scene>
         <!--Journey View Controller-->
         <scene sceneID="8aT-HV-ZTU">
@@ -310,15 +314,15 @@
                         <outlet property="journeyDistance" destination="fMo-kn-h7H" id="AlL-SV-KMo"/>
                         <outlet property="journeyProgress" destination="JE9-MU-Rhx" id="AFt-27-Kc5"/>
                         <outlet property="journeyStart" destination="kio-Lr-gJe" id="Fz1-As-vDN"/>
-                        <segue destination="zV4-Iq-0gp" kind="show" id="SZc-mM-Z0n"/>
+                        <segue destination="zV4-Iq-0gp" kind="show" id="dSr-VT-jWr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r8k-zL-kN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2117" y="-929"/>
+            <point key="canvasLocation" x="-2085" y="-929"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Oe4-SQ-BkT"/>
+        <segue reference="2xx-1u-ENg"/>
     </inferredMetricsTieBreakers>
 </document>

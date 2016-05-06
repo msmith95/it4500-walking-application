@@ -14,9 +14,6 @@ class DataPassing {
     
     static let sharedInstance = DataPassing(fileName: "journeys")
     
-    
-    
-   
     private init(fileName: String){
         loadFromJSONFile(fileName)
     }
