@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
 class JourneyListViewController: UITableViewController {
     let journeyCollection = DataPassing.sharedInstance
     var filteredJourneys: [Journey]!
+    var journey: NSManagedObject?
 
     override func viewDidLoad() {
         
@@ -58,7 +60,7 @@ class JourneyListViewController: UITableViewController {
         return cell
     }
     
-   /* override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let controller:JourneyViewController = segue.destinationViewController as! JourneyViewController
         
         if let row = self.tableView.indexPathForSelectedRow?.row {
@@ -108,8 +110,8 @@ class JourneyListViewController: UITableViewController {
         let managedContext = appDelegate.managedObjectContext
         
         if journey == nil {
-            let noteEntity =  NSEntityDescription.entityForName("JourneyInProgress", inManagedObjectContext: managedContext)
-            journey = NSManagedObject(entity: noteEntity!, insertIntoManagedObjectContext:managedContext)
+            let progressEntity =  NSEntityDescription.entityForName("JourneyInProgress", inManagedObjectContext: managedContext)
+            journey = NSManagedObject(entity: progressEntity!, insertIntoManagedObjectContext:managedContext)
         }
         
         journey?.setValue(NSDate(), forKey: "endDate")
@@ -170,6 +172,6 @@ class JourneyListViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */*/
+    */
 
 }
