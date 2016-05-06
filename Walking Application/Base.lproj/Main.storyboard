@@ -209,7 +209,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="nhi-5t-VW6"/>
                     <connections>
-                        <segue destination="FIl-zN-9Vc" kind="show" id="MCD-4A-A9g">
+                        <segue destination="FIl-zN-9Vc" kind="show" identifier="journeySegue" id="MCD-4A-A9g">
                             <nil key="action"/>
                         </segue>
                         <segue destination="zV4-Iq-0gp" kind="show" identifier="noJourney" id="xpZ-Fp-B13"/>
