@@ -55,7 +55,7 @@ class JourneyListViewController: UITableViewController {
         let journey = filteredJourneys[indexPath.row]
         cell.journeyName.text = journey.journeyName
         cell.journeyDistance.text = String(journey.distance)
-        
+        print(journey.distance)
         
         cell.accessoryType = .DisclosureIndicator//enum
         
