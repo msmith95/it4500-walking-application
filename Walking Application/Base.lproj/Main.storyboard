@@ -176,7 +176,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="mKS-QI-XSc" customClass="JouneyListTableViewCell" customModule="Walking_Application" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mKS-QI-XSc" id="Fe3-Tz-y9y">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -323,6 +323,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2xx-1u-ENg"/>
+        <segue reference="rQT-FG-cS9"/>
     </inferredMetricsTieBreakers>
 </document>

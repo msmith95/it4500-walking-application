@@ -8,7 +8,7 @@
 
 import UIKit
 
-class JouneyListTableViewCell: UITableViewCell {
+class JourneyListTableViewCell: UITableViewCell {
 
     @IBOutlet weak var journeyName: UILabel!
     @IBOutlet weak var journeyDistance: UILabel!
