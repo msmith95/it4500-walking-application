@@ -8,6 +8,8 @@
 
 import UIKit
 
+var journey:Journey?
+
 class JourneyViewController: UIViewController {
 
     @IBOutlet weak var journeyProgress: UIProgressView!
@@ -18,6 +20,12 @@ class JourneyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let j = journey {
+            
+            journeyDescription.text = j.description
+            
+        }
         
         // check core data for in-progress journey
         // if no, segue to no journey view

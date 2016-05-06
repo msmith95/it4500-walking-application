@@ -9,9 +9,13 @@
 import UIKit
 
 class JourneyListViewController: UITableViewController {
+    let journeyCollection = DataPassing.sharedInstance
+    var filteredJourneys: [Journey]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Journey List"
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -40,9 +44,87 @@ class JourneyListViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! JourneyListTableViewCell
+        
+        
+        let journey = filteredJourneys[indexPath.row]
+        cell.journeyName.text = journey.journeyName
+        cell.journeyDistance.text = String(journey.distance)
+        
+        
+        cell.accessoryType = .DisclosureIndicator//enum
+        
 
         return cell
     }
+    
+   /* override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let controller:JourneyViewController = segue.destinationViewController as! JourneyViewController
+        
+        if let row = self.tableView.indexPathForSelectedRow?.row {
+            controller.journey = filteredJourneys[row]
+        }
+    }
+    @IBAction func getJourneyInProgressData(sender: AnyObject) {
+        let journey = DataPasser()
+        let object = journey.getJourneyInProgress()
+        
+        if let object = object{
+            print(object.valueForKey("steps"))
+            print(object.valueForKey("journeyID"))
+            print(object.valueForKey("startDate"))
+            print(object.valueForKey("endDate"))
+        }
+    }
+    
+    
+    @IBAction func getUserData(sender: AnyObject) {
+        let user = DataPasser()
+        let object = user.getUserData()
+        
+        if let object = object{
+            print(object.valueForKey("journeysCompleted"))
+            print(object.valueForKey("journeysNotCompleted"))
+        }
+    }
+    
+    
+    @IBAction func getPassportData(sender: AnyObject) {
+        let passport = DataPasser()
+        let object = passport.getPassportData()
+        
+        if let object = object{
+            print(object.valueForKey("completedJourneys"))
+            print(object.valueForKey("journeyID"))
+            print(object.valueForKey("timesCompleted"))
+            print(object.valueForKey("timeToFinishJourney"))
+        }
+    }
+    
+    
+    
+    @IBAction func saveData(sender: AnyObject) {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        
+        if journey == nil {
+            let noteEntity =  NSEntityDescription.entityForName("JourneyInProgress", inManagedObjectContext: managedContext)
+            journey = NSManagedObject(entity: noteEntity!, insertIntoManagedObjectContext:managedContext)
+        }
+        
+        journey?.setValue(NSDate(), forKey: "endDate")
+        journey?.setValue(NSDate(), forKey: "startDate")
+        journey?.setValue(1, forKey: "journeyID")
+        journey?.setValue(999, forKey: "steps")
+        
+        // Complete save and handle potential error
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+    }
+    
+
 
     /*
     // Override to support conditional editing of the table view.
@@ -87,6 +169,6 @@ class JourneyListViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    */*/
 
 }

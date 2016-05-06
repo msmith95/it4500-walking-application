@@ -21,6 +21,7 @@
 		CDFCE24E1CCFE2210027FC8B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */; };
 		D2A6564B1CD1796B00F68B33 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6564A1CD1796B00F68B33 /* Journey.swift */; };
 		D2F73DB81CDBBB930052EB03 /* dataPasser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F73DB71CDBBB930052EB03 /* dataPasser.swift */; };
+		D2F73DBA1CDC39860052EB03 /* journeys.json in Resources */ = {isa = PBXBuildFile; fileRef = D2F73DB91CDC39860052EB03 /* journeys.json */; };
 		D6093E461CD1699A00B3FB0E /* Walking_Application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6093E441CD1699A00B3FB0E /* Walking_Application.xcdatamodeld */; };
 		D6093E4A1CD16A9F00B3FB0E /* DataPassing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6093E491CD16A9F00B3FB0E /* DataPassing.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		D2A6564A1CD1796B00F68B33 /* Journey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		D2F73DB71CDBBB930052EB03 /* dataPasser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataPasser.swift; sourceTree = "<group>"; };
+		D2F73DB91CDC39860052EB03 /* journeys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = journeys.json; path = ../../../Downloads/journeys.json; sourceTree = "<group>"; };
 		D6093E451CD1699A00B3FB0E /* Walking_Application.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Walking_Application.xcdatamodel; sourceTree = "<group>"; };
 		D6093E491CD16A9F00B3FB0E /* DataPassing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPassing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 				CD10785A1CCC530A00225D37 /* JourneyListViewController.swift */,
 				CDEB2A2E1CDBC6C3001A07DF /* JourneyListTableViewCell.swift */,
 				4CCEF5B61CB6D1660059017C /* Assets.xcassets */,
+				D2F73DB91CDC39860052EB03 /* journeys.json */,
 				4CCEF5B81CB6D1660059017C /* LaunchScreen.storyboard */,
 				4CCEF5BB1CB6D1660059017C /* Info.plist */,
 			);
@@ -156,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2F73DBA1CDC39860052EB03 /* journeys.json in Resources */,
 				4CCEF5BA1CB6D1660059017C /* LaunchScreen.storyboard in Resources */,
 				4CCEF5B71CB6D1660059017C /* Assets.xcassets in Resources */,
 				4CCEF5B21CB6D1660059017C /* Main.storyboard in Resources */,
