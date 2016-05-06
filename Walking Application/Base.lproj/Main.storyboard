@@ -212,6 +212,7 @@
                         <segue destination="FIl-zN-9Vc" kind="show" id="MCD-4A-A9g">
                             <nil key="action"/>
                         </segue>
+                        <segue destination="zV4-Iq-0gp" kind="show" identifier="noJourney" id="xpZ-Fp-B13"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAb-26-WgR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -236,22 +237,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMX-V8-f9S">
-                                <rect key="frame" x="546" y="20" width="34" height="30"/>
-                                <state key="normal" title="Start"/>
-                                <connections>
-                                    <action selector="startJourney:" destination="zV4-Iq-0gp" eventType="touchUpInside" id="pP7-NF-5fC"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="w4N-Ai-miZ" firstAttribute="centerX" secondItem="zyi-GP-qRz" secondAttribute="centerX" id="0L9-vH-da5"/>
-                            <constraint firstItem="IMX-V8-f9S" firstAttribute="top" secondItem="hLh-bH-hoy" secondAttribute="bottom" id="Ew2-bN-n3F"/>
                             <constraint firstItem="w4N-Ai-miZ" firstAttribute="centerY" secondItem="zyi-GP-qRz" secondAttribute="centerY" id="dfi-oc-r5O"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IMX-V8-f9S" secondAttribute="trailing" id="vNs-nO-9jG"/>
                         </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="NoJourneyLabel" destination="w4N-Ai-miZ" id="Kwj-Wc-Pgd"/>
                         <outlet property="NoJourneySelectedInfo" destination="dfi-oc-r5O" id="1eO-QD-8KW"/>

@@ -60,7 +60,10 @@ class JourneyListViewController: UITableViewController {
         return cell
     }
     
-   override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+
         let controller:JourneyViewController = segue.destinationViewController as! JourneyViewController
         
         if let row = self.tableView.indexPathForSelectedRow?.row {
