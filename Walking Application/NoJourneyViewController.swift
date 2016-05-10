@@ -15,7 +15,11 @@ class NoJourneyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "start", style: .Plain, target: self, action: #selector(startJourney))
+        
+        self.title = "test"
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Start", style: .Plain, target: self, action: #selector(startJourney))
+        
         NoJourneyText.text = "You have either completed a journey or not started one yet. Please select one by clicking 'Start' in the upper right hand corner."
 
         // Do any additional setup after loading the view.
@@ -30,8 +34,6 @@ class NoJourneyViewController: UIViewController {
         self.performSegueWithIdentifier("noJourney", sender: self)
         self.navigationController?.popViewControllerAnimated(true)
     }
-    // pop seque
-    // performsequewithidentifier
     
     /*
     // MARK: - Navigation
