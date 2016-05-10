@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import CoreData
 
 
 
 class JourneyViewController: UIViewController {
     var journey:Journey?
+
+    var journeyElse:NSManagedObject?
 
     @IBOutlet weak var journeyView: UIImageView!
     @IBOutlet weak var journeyProgress: UIProgressView!
@@ -74,6 +77,7 @@ class JourneyViewController: UIViewController {
         let object = journey.getJourneyInProgress()
         if let object = object {
             if object.valueForKey("journeyID") as! Int > 0 {
+                print("It Worked")
                 let alert = UIAlertController(title: "Override Journey", message: "You already have a journey in progress. Do you want to override the current one? Doing so will delete your current progress", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: {
                     (alertAction) -> Void in
@@ -85,12 +89,32 @@ class JourneyViewController: UIViewController {
                 self.presentViewController(alert, animated: true, completion: nil)
             }
             else {
-                // start journey()
+                journeyElse = object
+                startJourney()
             }
         }
     }
     
     func startJourney(){
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
         
+        if journeyElse == nil {
+            let noteEntity =  NSEntityDescription.entityForName("JourneyInProgress", inManagedObjectContext: managedContext)
+            journeyElse = NSManagedObject(entity: noteEntity!, insertIntoManagedObjectContext:managedContext)
+        }
+        
+        journeyElse?.setValue(NSDate(), forKey: "endDate")
+        journeyElse?.setValue(NSDate(), forKey: "startDate")
+        journeyElse?.setValue(1, forKey: "journeyID") //Need var to hold id of selected journey
+        journeyElse?.setValue(0, forKey: "steps")
+        
+        // Complete save and handle potential error
+        do {
+            try managedContext.save()
+        } catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        }
     }
 }
+
