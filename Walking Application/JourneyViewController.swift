@@ -15,6 +15,7 @@ class JourneyViewController: UIViewController {
     var journey:Journey?
     var id: Int?
     var name: String?
+    var totalSteps : Double?
     var journeyElse:NSManagedObject?
 
     @IBOutlet weak var journeyView: UIImageView!
@@ -38,6 +39,7 @@ class JourneyViewController: UIViewController {
         if let j = journey {
             id = j.journeyId
             name = j.journeyName
+            totalSteps = j.steps
             journeyDescription.text = j.description
             journeyDescription.textAlignment = NSTextAlignment.Center
             journeyDescription.textColor = UIColor.whiteColor()
@@ -121,7 +123,7 @@ class JourneyViewController: UIViewController {
             print("Could not save \(error), \(error.userInfo)")
         }
         journeyProgress.hidden = false
-        //journeyProgress.progress = Float (steps taken/total steps)
+        //journeyProgress.progress = Float (steps taken from core/totalSteps)
         journeyDescription.text = name
         journeyDistance.text = journey?.description
     }
