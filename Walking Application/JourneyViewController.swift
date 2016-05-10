@@ -14,8 +14,8 @@ class JourneyViewController: UIViewController {
     var journey:Journey?
 
     @IBOutlet weak var journeyProgress: UIProgressView!
-    @IBOutlet weak var journeyDescription: UILabel!
-    @IBOutlet weak var journeyDistance: UILabel!
+    @IBOutlet weak var journeyDescription: UITextView!
+    @IBOutlet weak var journeyDistance: UITextView!
     @IBOutlet weak var journeyStart: UIButton!
     
     
@@ -24,10 +24,13 @@ class JourneyViewController: UIViewController {
         
         self.title = "Journey"
         
+        
         if let j = journey {
             
             journeyDescription.text = j.description
+            journeyDescription.textAlignment = NSTextAlignment.Center
             journeyDistance.text = String(j.distance)
+            journeyDistance.textAlignment = NSTextAlignment.Center
             
             
         }

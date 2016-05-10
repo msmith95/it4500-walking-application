@@ -276,14 +276,14 @@
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JE9-MU-Rhx">
                                 <rect key="frame" x="225" y="207" width="150" height="2"/>
                             </progressView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGK-Xz-rn3">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGK-Xz-rn3">
                                 <rect key="frame" x="180" y="236" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvk-6w-OSc">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vvk-6w-OSc">
                                 <rect key="frame" x="180" y="372" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -298,7 +298,7 @@
                             <constraint firstItem="kio-Lr-gJe" firstAttribute="centerX" secondItem="vvk-6w-OSc" secondAttribute="centerX" id="AUe-le-7np"/>
                             <constraint firstItem="JE9-MU-Rhx" firstAttribute="top" secondItem="2HI-Ih-2DB" secondAttribute="bottom" constant="71" id="EQb-Kn-koe"/>
                             <constraint firstItem="JE9-MU-Rhx" firstAttribute="centerX" secondItem="2HI-Ih-2DB" secondAttribute="centerX" id="Icu-E4-vxp"/>
-                            <constraint firstItem="vvk-6w-OSc" firstAttribute="top" secondItem="AGK-Xz-rn3" secondAttribute="bottom" constant="8" id="Kip-0L-nL0"/>
+                            <constraint firstItem="vvk-6w-OSc" firstAttribute="top" secondItem="AGK-Xz-rn3" secondAttribute="bottom" constant="50" id="Kip-0L-nL0"/>
                             <constraint firstItem="kio-Lr-gJe" firstAttribute="top" secondItem="vvk-6w-OSc" secondAttribute="bottom" constant="13" id="SoZ-Rl-cSZ"/>
                             <constraint firstItem="2HI-Ih-2DB" firstAttribute="top" secondItem="Wbb-O3-j3r" secondAttribute="bottom" id="TqD-cE-yyE"/>
                             <constraint firstItem="2HI-Ih-2DB" firstAttribute="leading" secondItem="L5u-ng-XnU" secondAttribute="leadingMargin" id="hqC-U7-dvG"/>
@@ -307,6 +307,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="journeyDescription" destination="AGK-Xz-rn3" id="1AY-uN-mw9"/>
+                        <outlet property="journeyDistance" destination="vvk-6w-OSc" id="WVR-JF-Xqo"/>
                         <outlet property="journeyProgress" destination="JE9-MU-Rhx" id="AFt-27-Kc5"/>
                         <outlet property="journeyStart" destination="kio-Lr-gJe" id="Fz1-As-vDN"/>
                     </connections>
