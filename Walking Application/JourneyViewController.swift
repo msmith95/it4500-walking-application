@@ -13,7 +13,7 @@ import CoreData
 
 class JourneyViewController: UIViewController {
     var journey:Journey?
-
+    var id: Int?
     var journeyElse:NSManagedObject?
 
     @IBOutlet weak var journeyView: UIImageView!
@@ -36,7 +36,7 @@ class JourneyViewController: UIViewController {
         
         
         if let j = journey {
-            
+            id = j.journeyId
             journeyDescription.text = j.description
             journeyDescription.textAlignment = NSTextAlignment.Center
             journeyDescription.textColor = UIColor.whiteColor()
@@ -84,13 +84,17 @@ class JourneyViewController: UIViewController {
                 }))
                 alert.addAction(UIAlertAction(title: "Override", style: UIAlertActionStyle.Destructive, handler: {
                     (alertAction) -> Void in
-                    // delete core data, startJourney()
+                    self.startJourney()
                 }))
                 self.presentViewController(alert, animated: true, completion: nil)
             }
             else {
+
                 journeyElse = object
                 startJourney()
+
+               
+
             }
         }
     }
@@ -106,7 +110,7 @@ class JourneyViewController: UIViewController {
         
         journeyElse?.setValue(NSDate(), forKey: "endDate")
         journeyElse?.setValue(NSDate(), forKey: "startDate")
-        journeyElse?.setValue(1, forKey: "journeyID") //Need var to hold id of selected journey
+        journeyElse?.setValue(id, forKey: "journeyID") //Need var to hold id of selected journey
         journeyElse?.setValue(0, forKey: "steps")
         
         // Complete save and handle potential error
