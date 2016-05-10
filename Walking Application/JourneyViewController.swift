@@ -14,6 +14,7 @@ import CoreData
 class JourneyViewController: UIViewController {
     var journey:Journey?
     var id: Int?
+    var name: String?
     var journeyElse:NSManagedObject?
 
     @IBOutlet weak var journeyView: UIImageView!
@@ -32,11 +33,11 @@ class JourneyViewController: UIViewController {
         journeyDistance.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
         journeyStart.backgroundColor = UIColor.whiteColor()
         journeyStart.layer.cornerRadius = 5
-        
-        
+        journeyProgress.hidden = true
         
         if let j = journey {
             id = j.journeyId
+            name = j.journeyName
             journeyDescription.text = j.description
             journeyDescription.textAlignment = NSTextAlignment.Center
             journeyDescription.textColor = UIColor.whiteColor()
@@ -119,6 +120,10 @@ class JourneyViewController: UIViewController {
         } catch let error as NSError {
             print("Could not save \(error), \(error.userInfo)")
         }
+        journeyProgress.hidden = false
+        //journeyProgress.progress = Float (steps taken/total steps)
+        journeyDescription.text = name
+        journeyDistance.text = journey?.description
     }
 }
 
