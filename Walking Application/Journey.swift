@@ -10,6 +10,7 @@ import Foundation
 
 
 class Journey {
+    var fileName: String = ""
     var journeyName: String = ""
     var journeyId: Int
     var description: String = ""
@@ -17,7 +18,8 @@ class Journey {
     var distance: Double
     
     
-    init(journeyName: String, journeyID: Int, description: String, steps: Double, distance: Double) {
+    init(fileName: String, journeyName: String, journeyID: Int, description: String, steps: Double, distance: Double) {
+        self.fileName = fileName
         self.journeyName = journeyName
         self.journeyId = journeyID
         self.description = description

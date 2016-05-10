@@ -39,14 +39,15 @@ class DataPassing {
             if let status = jsonResult["status"] as? String where status == "ok" {//checks status
                 if let journeyList = jsonResult["journeys"] as? NSArray {//casts photo array as a NSArray
                     for journeys in journeyList{
-                        if let journeyName = journeys["journeyName"] as? String,
+                        if let fileName = journeys["fileName"] as? String,
+                            journeyName = journeys["journeyName"] as? String,
                             journeyID = journeys["journeyID"] as? Int,
                             description = journeys["description"] as? String,
                             steps = journeys["steps"] as? Double,
                             distance = journeys["distance"] as? Double
                             {
                             
-                            self.journeys.append(Journey(journeyName: journeyName, journeyID: journeyID, description: description,
+                                self.journeys.append(Journey(fileName: fileName ,journeyName: journeyName, journeyID: journeyID, description: description,
                                 steps: steps, distance: distance))
                         }
                     }

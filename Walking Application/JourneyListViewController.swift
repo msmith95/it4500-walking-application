@@ -21,6 +21,7 @@ class JourneyListViewController: UITableViewController {
         self.title = "Journey List"
         
         filteredJourneys = journeyCollection.journeys
+        print(journeyCollection.journeys.count)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
