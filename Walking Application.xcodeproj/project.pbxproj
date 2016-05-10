@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C314B5F1CDD47AE00C0C41B /* journeys.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C314B5E1CDD47AE00C0C41B /* journeys.json */; };
 		4CCEF5AD1CB6D1660059017C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */; };
 		4CCEF5AF1CB6D1660059017C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEF5AE1CB6D1660059017C /* ViewController.swift */; };
 		4CCEF5B21CB6D1660059017C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCEF5B01CB6D1660059017C /* Main.storyboard */; };
@@ -21,6 +20,7 @@
 		CDE033C61CD163690003C9F0 /* NoJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C51CD163690003C9F0 /* NoJourneyViewController.swift */; };
 		CDEB2A2F1CDBC6C3001A07DF /* JourneyListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDEB2A2E1CDBC6C3001A07DF /* JourneyListTableViewCell.swift */; };
 		CDFCE24E1CCFE2210027FC8B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */; };
+		D23BFE761CE28E0800093F10 /* journeys.json in Resources */ = {isa = PBXBuildFile; fileRef = D23BFE751CE28E0800093F10 /* journeys.json */; };
 		D2A6564B1CD1796B00F68B33 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6564A1CD1796B00F68B33 /* Journey.swift */; };
 		D2F73DB81CDBBB930052EB03 /* dataPasser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F73DB71CDBBB930052EB03 /* dataPasser.swift */; };
 		D6093E461CD1699A00B3FB0E /* Walking_Application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6093E441CD1699A00B3FB0E /* Walking_Application.xcdatamodeld */; };
@@ -28,7 +28,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C314B5E1CDD47AE00C0C41B /* journeys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = journeys.json; sourceTree = "<group>"; };
 		4CCEF5A91CB6D1650059017C /* Walking Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walking Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CCEF5AE1CB6D1660059017C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,6 +43,7 @@
 		CDE033C51CD163690003C9F0 /* NoJourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoJourneyViewController.swift; sourceTree = "<group>"; };
 		CDEB2A2E1CDBC6C3001A07DF /* JourneyListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyListTableViewCell.swift; sourceTree = "<group>"; };
 		CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		D23BFE751CE28E0800093F10 /* journeys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = journeys.json; sourceTree = "<group>"; };
 		D2A6564A1CD1796B00F68B33 /* Journey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		D2F73DB71CDBBB930052EB03 /* dataPasser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataPasser.swift; sourceTree = "<group>"; };
 		D6093E451CD1699A00B3FB0E /* Walking_Application.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Walking_Application.xcdatamodel; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 		4CCEF5AB1CB6D1660059017C /* Walking Application */ = {
 			isa = PBXGroup;
 			children = (
-				4C314B5E1CDD47AE00C0C41B /* journeys.json */,
+				D23BFE741CE28DF100093F10 /* journeys */,
 				D6093E491CD16A9F00B3FB0E /* DataPassing.swift */,
 				D2F73DB71CDBBB930052EB03 /* dataPasser.swift */,
 				D2A6564A1CD1796B00F68B33 /* Journey.swift */,
@@ -101,6 +101,14 @@
 				4CCEF5BB1CB6D1660059017C /* Info.plist */,
 			);
 			path = "Walking Application";
+			sourceTree = "<group>";
+		};
+		D23BFE741CE28DF100093F10 /* journeys */ = {
+			isa = PBXGroup;
+			children = (
+				D23BFE751CE28E0800093F10 /* journeys.json */,
+			);
+			name = journeys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,7 +170,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C314B5F1CDD47AE00C0C41B /* journeys.json in Resources */,
+				D23BFE761CE28E0800093F10 /* journeys.json in Resources */,
 				4CCEF5BA1CB6D1660059017C /* LaunchScreen.storyboard in Resources */,
 				4CCEF5B71CB6D1660059017C /* Assets.xcassets in Resources */,
 				4CCEF5B21CB6D1660059017C /* Main.storyboard in Resources */,
