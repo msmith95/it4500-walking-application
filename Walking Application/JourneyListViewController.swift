@@ -19,6 +19,7 @@ class JourneyListViewController: UITableViewController {
         super.viewDidLoad()
         
         self.title = "Journey List"
+        self.view.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
         
         filteredJourneys = journeyCollection.journeys
         print(journeyCollection.journeys.count)
@@ -59,6 +60,8 @@ class JourneyListViewController: UITableViewController {
         print(journey.distance)
         
         cell.accessoryType = .DisclosureIndicator//enum
+        
+        cell.backgroundColor = UIColor(red: 0.05, green: 0.71, blue: 0.93, alpha: 1)
         
 
         return cell

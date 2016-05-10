@@ -13,8 +13,12 @@ class JourneyListTableViewCell: UITableViewCell {
     @IBOutlet weak var journeyName: UILabel!
     @IBOutlet weak var journeyDistance: UILabel!
     
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        journeyName.textColor = UIColor.whiteColor()
+        journeyDistance.textColor = UIColor.whiteColor()
+        
         // Initialization code
     }
 

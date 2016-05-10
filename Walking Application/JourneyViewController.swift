@@ -24,15 +24,25 @@ class JourneyViewController: UIViewController {
         super.viewDidLoad()
         
         self.title = "Journey"
+        self.view.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
+        journeyDescription.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
+        journeyDistance.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
+        journeyStart.backgroundColor = UIColor.whiteColor()
+        journeyStart.layer.cornerRadius = 5
+        
+        
         
         if let j = journey {
             
             journeyDescription.text = j.description
             journeyDescription.textAlignment = NSTextAlignment.Center
+            journeyDescription.textColor = UIColor.whiteColor()
+            journeyDescription.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
             journeyDistance.text = String(j.distance)
             journeyDistance.textAlignment = NSTextAlignment.Center
-            
-            journeyView.image = UIImage(named: "\(j.fileName)")
+            journeyDistance.textColor = UIColor.whiteColor()
+            journeyDistance.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
+            // don't have images journeyView.image = UIImage(named: "\(j.fileName)") 
         }
         
         
@@ -59,5 +69,28 @@ class JourneyViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func journeyTrigger(sender: AnyObject) {
+        let journey = DataPasser()
+        let object = journey.getJourneyInProgress()
+        if let object = object {
+            if object.valueForKey("journeyID") as! Int > 0 {
+                let alert = UIAlertController(title: "Override Journey", message: "You already have a journey in progress. Do you want to override the current one? Doing so will delete your current progress", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: {
+                    (alertAction) -> Void in
+                }))
+                alert.addAction(UIAlertAction(title: "Override", style: UIAlertActionStyle.Destructive, handler: {
+                    (alertAction) -> Void in
+                    // delete core data, startJourney()
+                }))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+            else {
+                // start journey()
+            }
+        }
+    }
+    
+    func startJourney(){
+        
+    }
 }
