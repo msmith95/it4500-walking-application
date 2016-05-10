@@ -13,6 +13,7 @@ import UIKit
 class JourneyViewController: UIViewController {
     var journey:Journey?
 
+    @IBOutlet weak var journeyView: UIImageView!
     @IBOutlet weak var journeyProgress: UIProgressView!
     @IBOutlet weak var journeyDescription: UITextView!
     @IBOutlet weak var journeyDistance: UITextView!
@@ -24,7 +25,6 @@ class JourneyViewController: UIViewController {
         
         self.title = "Journey"
         
-        
         if let j = journey {
             
             journeyDescription.text = j.description
@@ -32,8 +32,10 @@ class JourneyViewController: UIViewController {
             journeyDistance.text = String(j.distance)
             journeyDistance.textAlignment = NSTextAlignment.Center
             
-            
+            journeyView.image = UIImage(named: "\(j.fileName)")
         }
+        
+        
        
         
         // check core data for in-progress journey
@@ -48,7 +50,6 @@ class JourneyViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
