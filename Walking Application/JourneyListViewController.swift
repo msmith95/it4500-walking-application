@@ -29,6 +29,28 @@ class JourneyListViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        
+        if journey == nil {
+            let noteEntity =  NSEntityDescription.entityForName("JourneyInProgress", inManagedObjectContext: managedContext)
+            journey = NSManagedObject(entity: noteEntity!, insertIntoManagedObjectContext:managedContext)
+        }
+        
+        journey?.setValue(NSDate(), forKey: "endDate")
+        journey?.setValue(NSDate(), forKey: "startDate")
+        journey?.setValue(-1, forKey: "journeyID")
+        journey?.setValue(0, forKey: "steps")
+        
+        // Complete save and handle potential error
+        do {
+            try managedContext.save()
+            print("It saved")
+        } catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
