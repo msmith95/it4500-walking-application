@@ -2,20 +2,52 @@
 	"status": "ok",
 	"journeys":[
 		{
-			"fileName": "khou",
-            "journeyName" : "journey 1",
+			"fileName": "Pisa.png",
+            "journeyName" : "Leaning Tower of Pisa",
             "journeyID" : 0,
 			"description" : "This is the description for journey 1",
-			"steps" : 1000,
-			"distance" : 1
+			"steps" : 74,
+			"distance" : 0.035
 		},
 		{
-			"fileName": "jhu",
-            "journeyName" : "journey 2",
+			"fileName": "MtEverest.png",
+            "journeyName" : "Mt. Everest",
             "journeyID" : 1,
-			"description" : "This is the description for journey 2",
-			"steps" : 2000,
-			"distance" : 2
+                "description" : "Mt. Everest is the tallest mountain in the world standing at 29,029 ft. (8,848 meters) above sea level. It sits on the Nepal/Tibet border and is part of the Himalayan Mountain Range. Mt. Everest was first officially summited in 1953 by Sir Edmund Hillary and Tenzing Norgay. 2015 marked the first year since 1974 no one reached Everest’s summit due to a devastating Earthquake and subsequent avalanches that struck the mountain in April of that year.",
+			"steps" : 11612,
+			"distance" : 5.49
 		},
+        {
+            "fileName": "MtHollywood.png",
+            "journeyName" : "Mt. Hollywood",
+            "journeyID" : 2,
+            "description" : "This is the description for journey 2",
+            "steps" : 13728,
+            "distance" : 6.5
+        },
+        {
+            "fileName": "MtFugi.png",
+            "journeyName" : "Mt. Fuji",
+            "journeyID" : 3,
+            "description" : "Mount Fuji is a 12,389 ft. (3,776.24 m.) active volcano located on Honshu Island, Japan. It is the tallest peak in Japan and has been the subject of art and literature for centuries. The top of Mount Fuji is actually part of the Fujisan Hongū Sengen Taisha, a massive Shinto shrine. The Mt. Fuji area is incredibly scenic consisting of: the Five Fuji Lakes, a number of waterfalls, hot springs, and miles of Cherry Blossoms.",
+            "steps" : 164736,
+            "distance" : 78
+        },
+        {
+            "fileName": "Appalachian.png",
+            "journeyName" : "Appalachian Trail",
+            "journeyID" : 4,
+            "description" : "The Appalachian Trail is a hiking trail located in the Eastern United States. The trail crosses through 14 states; extending roughly 2,200 miles (3,500 km) between Springer Mountain in Georgia and Mount Katahdin in Maine. There are campsites, resupply stations, and miles of wilderness all maintained by the Appalachian Trail Conservancy (ATC).",
+            "steps" : 4625280,
+            "distance" : 2190
+        },
+        {
+            "fileName": "GreatWall.png",
+            "journeyName" : "The Great Wall of China",
+            "journeyID" : 5,
+            "description" : "The Great Wall of China is located in Northern China along the historical Northern border of the county. “Wall” is actually a bit of a misnomer as the Great Wall is a series of connecting or parallel brick and earth fortifications along with trenches and other natural barriers. It was originally built to keep the Mongol tribes from invading China. With all its various branches the Great Wall spans over 13,000 miles (21,000 km.)",
+            "steps" : 27815040,
+            "distance" : 13170
+        },
 	]
 }
