@@ -19,6 +19,9 @@ class JourneyListViewController: UITableViewController {
     var jID:Int? = -1
     var journeyMove:Journey?
 
+    override func viewWillAppear(animated: Bool){
+        tableView.reloadData()
+    }
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -102,8 +105,15 @@ class JourneyListViewController: UITableViewController {
         
         cell.accessoryType = .DisclosureIndicator//enum
         
-        //cell.backgroundColor = UIColor(red: 0.05, green: 0.71, blue: 0.93, alpha: 1)
-        
+        // color text orange on active journey
+        let journey2 = DataPasser()
+        let object = journey2.getJourneyInProgress()
+        if let object = object {
+            if object.valueForKey("journeyID") as! Int == indexPath.row {
+                cell.journeyName.textColor = UIColor.redColor()
+                cell.journeyDistance.textColor = UIColor.redColor()
+            }
+        }
 
         return cell
     }

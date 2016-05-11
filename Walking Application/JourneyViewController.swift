@@ -53,10 +53,6 @@ class JourneyViewController: UIViewController {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         
-        self.view.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
-        journeyDescription.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
-        journeyDistance.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
-        journeyStart.backgroundColor = UIColor.whiteColor()
         journeyStart.layer.cornerRadius = 5
         journeyProgress.hidden = true
         journeyStart.hidden = false

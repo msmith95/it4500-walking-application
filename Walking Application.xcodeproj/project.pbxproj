@@ -109,10 +109,10 @@
 				CD10785C1CCC534000225D37 /* PassportViewController.swift */,
 				CD10785A1CCC530A00225D37 /* JourneyListViewController.swift */,
 				CDEB2A2E1CDBC6C3001A07DF /* JourneyListTableViewCell.swift */,
-				4CCEF5B61CB6D1660059017C /* Assets.xcassets */,
 				4CCEF5B81CB6D1660059017C /* LaunchScreen.storyboard */,
 				4CCEF5BB1CB6D1660059017C /* Info.plist */,
 				4C55541B1CE3AD9A00C10364 /* JourneyNavigationController.swift */,
+				4CCEF5B61CB6D1660059017C /* Assets.xcassets */,
 			);
 			path = "Walking Application";
 			sourceTree = "<group>";

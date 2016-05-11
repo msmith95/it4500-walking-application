@@ -12,7 +12,7 @@ class PassportNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationBar.barTintColor = UIColor(red: 0.0078, green: 0.686, blue: 0.89, alpha: 1.0)
+        self.navigationBar.barTintColor = UIColor(red: 0.478, green: 0.8, blue: 0.266, alpha: 1.0)
         self.navigationBar.translucent = false
 
         // Do any additional setup after loading the view.
