@@ -30,6 +30,7 @@ class JourneyListViewController: UITableViewController {
                 print("\(success)")
                 print("\(error)")
         }
+       
         
         filteredJourneys = journeyCollection.journeys
         print(journeyCollection.journeys.count)
