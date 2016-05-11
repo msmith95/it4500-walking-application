@@ -18,6 +18,7 @@ class JourneyViewController: UIViewController {
     var totalSteps : Double?
     var journeyElse:NSManagedObject?
 
+    
     @IBOutlet weak var journeyView: UIImageView!
     @IBOutlet weak var journeyProgress: UIProgressView!
     @IBOutlet weak var journeyDescription: UITextView!
@@ -48,7 +49,7 @@ class JourneyViewController: UIViewController {
             journeyDistance.textAlignment = NSTextAlignment.Center
             journeyDistance.textColor = UIColor.whiteColor()
             journeyDistance.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
-           // journeyView.image = UIImage(named: j.fileName)
+            journeyView.image = UIImage(named: j.fileName)
 
         }
         
