@@ -152,7 +152,7 @@
         <!--Home-->
         <scene sceneID="BdY-zI-a2m">
             <objects>
-                <navigationController id="5Qd-7h-QF4" sceneMemberID="viewController">
+                <navigationController id="5Qd-7h-QF4" customClass="JourneyNavigationController" customModule="Walking_Application" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Home" image="house" id="bh7-v3-xOc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dBq-qf-xOF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

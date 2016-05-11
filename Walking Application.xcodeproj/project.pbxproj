@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C55541C1CE3AD9A00C10364 /* JourneyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C55541B1CE3AD9A00C10364 /* JourneyNavigationController.swift */; };
 		4CCEF5AD1CB6D1660059017C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */; };
 		4CCEF5AF1CB6D1660059017C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEF5AE1CB6D1660059017C /* ViewController.swift */; };
 		4CCEF5B21CB6D1660059017C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCEF5B01CB6D1660059017C /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C55541B1CE3AD9A00C10364 /* JourneyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyNavigationController.swift; sourceTree = "<group>"; };
 		4CCEF5A91CB6D1650059017C /* Walking Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walking Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CCEF5AE1CB6D1660059017C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				4CCEF5B61CB6D1660059017C /* Assets.xcassets */,
 				4CCEF5B81CB6D1660059017C /* LaunchScreen.storyboard */,
 				4CCEF5BB1CB6D1660059017C /* Info.plist */,
+				4C55541B1CE3AD9A00C10364 /* JourneyNavigationController.swift */,
 			);
 			path = "Walking Application";
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				CDE033C41CD15F5F0003C9F0 /* PassportJourneyViewController.swift in Sources */,
 				D2F73DB81CDBBB930052EB03 /* dataPasser.swift in Sources */,
 				CDE033C61CD163690003C9F0 /* NoJourneyViewController.swift in Sources */,
+				4C55541C1CE3AD9A00C10364 /* JourneyNavigationController.swift in Sources */,
 				4CCEF5AD1CB6D1660059017C /* AppDelegate.swift in Sources */,
 				D6093E461CD1699A00B3FB0E /* Walking_Application.xcdatamodeld in Sources */,
 				D6093E4A1CD16A9F00B3FB0E /* DataPassing.swift in Sources */,
