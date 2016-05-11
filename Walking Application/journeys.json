@@ -13,7 +13,7 @@
 			"fileName": "MtEverest.png",
             "journeyName" : "Mt. Everest",
             "journeyID" : 1,
-                "description" : "Mt. Everest is the tallest mountain in the world standing at 29,029 feet above sea level. It sits on the Nepal/Tibet border and is part of the Himalayan Mountain Range. Mt. Everest was first officially summited in 1953 by Sir Edmund Hillary and Tenzing Norgay.",
+            "description" : "Mt. Everest is the tallest mountain in the world standing at 29,029 feet above sea level. It sits on the Nepal/Tibet border and is part of the Himalayan Mountain Range. Mt. Everest was first officially summited in 1953 by Sir Edmund Hillary and Tenzing Norgay.",
 			"steps" : 11612,
 			"distance" : 5.49
 		},

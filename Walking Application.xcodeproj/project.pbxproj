@@ -22,6 +22,7 @@
 		CDFCE24E1CCFE2210027FC8B /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */; };
 		D23BFE761CE28E0800093F10 /* journeys.json in Resources */ = {isa = PBXBuildFile; fileRef = D23BFE751CE28E0800093F10 /* journeys.json */; };
 		D2A6564B1CD1796B00F68B33 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A6564A1CD1796B00F68B33 /* Journey.swift */; };
+		D2CC8EDB1CE2E23700D51F10 /* MtEverest.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CC8EDD1CE2E23700D51F10 /* MtEverest.png */; };
 		D2F73DB81CDBBB930052EB03 /* dataPasser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2F73DB71CDBBB930052EB03 /* dataPasser.swift */; };
 		D6093E461CD1699A00B3FB0E /* Walking_Application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6093E441CD1699A00B3FB0E /* Walking_Application.xcdatamodeld */; };
 		D6093E4A1CD16A9F00B3FB0E /* DataPassing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6093E491CD16A9F00B3FB0E /* DataPassing.swift */; };
@@ -45,6 +46,7 @@
 		CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
 		D23BFE751CE28E0800093F10 /* journeys.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = journeys.json; sourceTree = "<group>"; };
 		D2A6564A1CD1796B00F68B33 /* Journey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
+		D2CC8EDC1CE2E23700D51F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/MtEverest.png; sourceTree = "<group>"; };
 		D2F73DB71CDBBB930052EB03 /* dataPasser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dataPasser.swift; sourceTree = "<group>"; };
 		D6093E451CD1699A00B3FB0E /* Walking_Application.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Walking_Application.xcdatamodel; sourceTree = "<group>"; };
 		D6093E491CD16A9F00B3FB0E /* DataPassing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPassing.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				D23BFE751CE28E0800093F10 /* journeys.json */,
+				D2CC8EDD1CE2E23700D51F10 /* MtEverest.png */,
 			);
 			name = journeys;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				4CCEF5BA1CB6D1660059017C /* LaunchScreen.storyboard in Resources */,
 				4CCEF5B71CB6D1660059017C /* Assets.xcassets in Resources */,
 				4CCEF5B21CB6D1660059017C /* Main.storyboard in Resources */,
+				D2CC8EDB1CE2E23700D51F10 /* MtEverest.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +222,14 @@
 				4CCEF5B91CB6D1660059017C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D2CC8EDD1CE2E23700D51F10 /* MtEverest.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2CC8EDC1CE2E23700D51F10 /* Base */,
+			);
+			name = MtEverest.png;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

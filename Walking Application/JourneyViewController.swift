@@ -34,6 +34,7 @@ class JourneyViewController: UIViewController {
         journeyStart.backgroundColor = UIColor.whiteColor()
         journeyStart.layer.cornerRadius = 5
         journeyProgress.hidden = true
+        journeyStart.hidden = false
         
         if let j = journey {
             id = j.journeyId
@@ -46,8 +47,10 @@ class JourneyViewController: UIViewController {
             journeyDistance.text = String(j.distance) + " miles"
             journeyDistance.textAlignment = NSTextAlignment.Center
             journeyDistance.textColor = UIColor.whiteColor()
-            journeyDistance.font = UIFont.systemFontOfSize(12, weight: UIFontWeightMedium)
-            // don't have images journeyView.image = UIImage(named: "\(j.fileName)") 
+ 
+            journeyDistance.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
+           // journeyView.image = UIImage(named: j.fileName)
+
         }
         
         
@@ -122,6 +125,7 @@ class JourneyViewController: UIViewController {
             print("Could not save \(error), \(error.userInfo)")
         }
         journeyProgress.hidden = false
+        journeyStart.hidden = true
         //journeyProgress.progress = Float (steps taken from core/totalSteps)
         journeyDescription.text = name
         journeyDistance.text = journey?.description
