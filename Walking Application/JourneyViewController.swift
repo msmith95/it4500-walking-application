@@ -32,46 +32,9 @@ class JourneyViewController: UIViewController {
     
     
     override func viewWillAppear(animated: Bool) {
-       
-    }
-    
-    override func viewDidAppear(animated: Bool) {
-        if(ip){
-            //self.navigationController?.viewControllers = [self]
-            self.navigationController?.navigationItem.hidesBackButton = true
-        }
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.view.backgroundColor = UIColor(red: 0.686, green:0.89, blue:0.0078, alpha:1.0)
-        journeyDescription.backgroundColor = UIColor(red: 0.686, green:0.89, blue:0.0078, alpha:1.0)
-        journeyDistance.backgroundColor = UIColor(red: 0.686, green:0.89, blue:0.0078, alpha:1.0)
-        journeyStart.backgroundColor = UIColor(red: 0.0078, green: 0.686, blue: 0.89, alpha: 1.0)
-        journeyStart.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
-        
-        journeyStart.layer.cornerRadius = 5
-        journeyProgress.hidden = true
-        journeyStart.hidden = false
-        
-        if let j = journey {
-            id = j.journeyId
-            name = j.journeyName
-            totalSteps = j.steps
-            journeyDescription.text = j.description
-            journeyDescription.textAlignment = NSTextAlignment.Center
-            journeyDescription.textColor = UIColor.darkGrayColor()
-            journeyDescription.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
-            journeyDistance.text = String(j.distance) + " miles" 
-            journeyDistance.textAlignment = NSTextAlignment.Center
-            journeyDistance.textColor = UIColor.darkGrayColor()
-            journeyDistance.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
-            journeyView.image = UIImage(named: j.fileName)
-
-        }
         
         journeyElse = dp.getJourneyInProgress()
         
@@ -95,12 +58,61 @@ class JourneyViewController: UIViewController {
                 } catch let error as NSError {
                     print("Could not save \(error), \(error.userInfo)")
                 }
-
+                
             }
             journeyProgress.progress = Float(Double((journeyElse?.valueForKey("steps"))! as! NSNumber) / totalSteps!)
+       
+        }
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if(ip){
+            //self.navigationController?.viewControllers = [self]
+            self.navigationController?.navigationItem.hidesBackButton = true
+        }
+    
+            if((journeyElse?.valueForKey("steps"))! as? Double >= journey?.steps){
+                let alert = UIAlertController(title: "Journey Completed", message: "A stamp has been added to your passport.  Go out there and start another", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: {
+                    (alertAction) -> Void in
+                }))
+                self.presentViewController(alert, animated: true, completion: nil)
+            }
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.view.backgroundColor = UIColor(red: 0.686, green:0.89, blue:0.0078, alpha:1.0)
+        journeyDescription.backgroundColor = UIColor(red: 0.686, green:0.89, blue:0.0078, alpha:1.0)
+        journeyDistance.backgroundColor = UIColor(red: 0.686, green:0.89, blue:0.0078, alpha:1.0)
+        journeyStart.backgroundColor = UIColor(red: 0.0078, green: 0.686, blue: 0.89, alpha: 1.0)
+        journeyStart.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
+        
+        journeyStart.layer.cornerRadius = 5
+        journeyProgress.hidden = true
+        journeyStart.hidden = false
+        
+        if let j = journey {
+            id = j.journeyId
+            name = j.journeyName
+            totalSteps = j.steps
+            journeyDescription.text = j.description
+            journeyDescription.textAlignment = NSTextAlignment.Center
+            journeyDescription.textColor = UIColor.darkGrayColor()
+            journeyDescription.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
+            journeyDistance.text = String(j.distance) + " miles" 
+            journeyDistance.textAlignment = NSTextAlignment.Center
+            journeyDistance.textColor = UIColor.darkGrayColor()
+            journeyDistance.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
+            journeyView.image = UIImage(named: j.fileName)
+
+        }
+        
+        
             //print("JIP \(journeyElse?.valueForKey("steps"))")
             //print("JIP ID \(journeyElse?.valueForKey("journeyID"))")
-        }
+        
        
         
         // check core data for in-progress journey

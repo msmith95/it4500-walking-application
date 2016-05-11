@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import HealthKit
 
 class JourneyListViewController: UITableViewController {
     let journeyCollection = DataPassing.sharedInstance
@@ -17,16 +18,45 @@ class JourneyListViewController: UITableViewController {
     let dp = DataPasser()
     var jIP: NSManagedObject?
     var jID:Int? = -1
-    var journeyMove:Journey?
+    var journeyMove:NSManagedObject?
+    var object:NSManagedObject?
 
-    override func viewWillAppear(animated: Bool){
-        tableView.reloadData()
+    override func viewDidAppear(animated: Bool){
+        self.tableView.reloadData()
+        let journey2 = DataPasser()
+        object = journey2.getJourneyInProgress()
+        if((journey?.valueForKey("journeyID"))! as! NSObject == -1){
+            let alert = UIAlertController(title: "No Journey in Progress", message: "You do not have a journey in progress.  Please choose one below to start!", preferredStyle: UIAlertControllerStyle.Alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: {
+                (alertAction) -> Void in
+            }))
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
+
     }
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(red: 0.686, green:0.89, blue:0.0078, alpha:1.0)
+        
+        let healthKitStore:HKHealthStore = HKHealthStore()
+        
+        // 1. Create a BMI Sample
+        let bmiType = HKQuantityType.quantityTypeForIdentifier(HKQuantityTypeIdentifierStepCount)
+        let bmiQuantity = HKQuantity(unit: HKUnit.countUnit(), doubleValue: 74.0)
+        let bmiSample = HKQuantitySample(type: bmiType!, quantity: bmiQuantity, startDate: NSDate(), endDate: NSDate())
+        
+        // 2. Save the sample in the store
+        healthKitStore.saveObject(bmiSample, withCompletion: { (success, error) -> Void in
+            if( error != nil ) {
+                print("Error saving Steps sample: \(error!.localizedDescription)")
+            } else {
+                print("Steps sample saved successfully!")
+            }
+        })
+
 
         
         HKM.authorizeHealthKit()
@@ -55,23 +85,25 @@ class JourneyListViewController: UITableViewController {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         
+        journey = dp.getJourneyInProgress()
+        //journey = nil
         if journey == nil {
             let noteEntity =  NSEntityDescription.entityForName("JourneyInProgress", inManagedObjectContext: managedContext)
             journey = NSManagedObject(entity: noteEntity!, insertIntoManagedObjectContext:managedContext)
+            journey?.setValue(NSDate(), forKey: "endDate")
+            journey?.setValue(NSDate(), forKey: "startDate")
+            journey?.setValue(-1, forKey: "journeyID")
+            journey?.setValue(0, forKey: "steps")
+
         }
         
-        journey?.setValue(NSDate(), forKey: "endDate")
-        journey?.setValue(NSDate(), forKey: "startDate")
-        journey?.setValue(-1, forKey: "journeyID")
-        journey?.setValue(0, forKey: "steps")
-        
         // Complete save and handle potential error
-        do {
+        /*do {
             try managedContext.save()
             print("It saved")
         } catch let error as NSError {
             print("Could not save \(error), \(error.userInfo)")
-        }
+        }*/
 
     }
 
@@ -106,12 +138,14 @@ class JourneyListViewController: UITableViewController {
         cell.accessoryType = .DisclosureIndicator//enum
         
         // color text orange on active journey
-        let journey2 = DataPasser()
-        let object = journey2.getJourneyInProgress()
+        
         if let object = object {
             if object.valueForKey("journeyID") as! Int == indexPath.row {
                 cell.journeyName.textColor = UIColor.redColor()
                 cell.journeyDistance.textColor = UIColor.redColor()
+            }else{
+                cell.journeyName.textColor = UIColor.darkGrayColor()
+                cell.journeyDistance.textColor = UIColor.darkGrayColor()
             }
         }
 
