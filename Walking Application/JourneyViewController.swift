@@ -28,7 +28,6 @@ class JourneyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "Journey"
         self.view.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
         journeyDescription.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
         journeyDistance.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)

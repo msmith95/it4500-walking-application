@@ -18,8 +18,8 @@ class JourneyListViewController: UITableViewController {
         
         super.viewDidLoad()
         
-        self.title = "Journey List"
         self.view.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
+
         
         filteredJourneys = journeyCollection.journeys
         print(journeyCollection.journeys.count)

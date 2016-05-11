@@ -28,7 +28,7 @@
         <scene sceneID="P0D-TS-fEC">
             <objects>
                 <navigationController id="dhV-EJ-LO0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Passport" id="Iou-f9-I8J"/>
+                    <tabBarItem key="tabBarItem" title="Passport" image="journey" id="Iou-f9-I8J"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="L76-gb-Bkr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -149,11 +149,11 @@
             </objects>
             <point key="canvasLocation" x="-2830" y="403"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Home-->
         <scene sceneID="BdY-zI-a2m">
             <objects>
                 <navigationController id="5Qd-7h-QF4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="bh7-v3-xOc"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" id="bh7-v3-xOc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dBq-qf-xOF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -326,4 +326,8 @@
             <point key="canvasLocation" x="-2830" y="-337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="house" width="29" height="26"/>
+        <image name="journey" width="28" height="28"/>
+    </resources>
 </document>
