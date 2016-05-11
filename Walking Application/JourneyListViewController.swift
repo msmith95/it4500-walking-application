@@ -52,10 +52,6 @@ class JourneyListViewController: UITableViewController {
         }
 
     }
-    
-    override func viewWillAppear(animated: Bool) {
-        UINavigationBar.appearance().backgroundColor = UIColor.orangeColor()
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -93,6 +89,9 @@ class JourneyListViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        self.performSegueWithIdentifier("journeySegue", sender: self)
+    }
 
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
