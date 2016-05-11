@@ -17,6 +17,10 @@ class JourneyViewController: UIViewController {
     var name: String?
     var totalSteps : Double?
     var journeyElse:NSManagedObject?
+    let HKM = HealthKitManager()
+    let dp = DataPasser()
+    var startDate:NSDate?
+    var ip:Bool = false
 
     
     @IBOutlet weak var journeyView: UIImageView!
@@ -26,8 +30,22 @@ class JourneyViewController: UIViewController {
     @IBOutlet weak var journeyStart: UIButton!
     
     
+    override func viewWillAppear(animated: Bool) {
+       
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        if(ip){
+            //self.navigationController?.viewControllers = [self]
+            self.navigationController?.navigationItem.hidesBackButton = true
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
         
         self.view.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
         journeyDescription.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
@@ -53,7 +71,34 @@ class JourneyViewController: UIViewController {
 
         }
         
+        journeyElse = dp.getJourneyInProgress()
         
+        if(journeyElse?.valueForKey("journeyID")! as? NSObject == id){
+            journeyProgress.hidden = false
+            journeyStart.hidden = true
+            HKM.getSteps(journeyElse?.valueForKey("startDate") as! NSDate)
+            {(steps:Int?, error:NSError?) in
+                var trueSteps:Int?
+                if(steps == nil){
+                    trueSteps = 0
+                }else{
+                    trueSteps = steps
+                }
+                self.journeyElse?.setValue(trueSteps, forKey: "steps")
+                print("HK steps \(steps)")
+                print("HK error \(error)")
+                do {
+                    try managedContext.save()
+                    print("Updated JIP steps")
+                } catch let error as NSError {
+                    print("Could not save \(error), \(error.userInfo)")
+                }
+
+            }
+            journeyProgress.progress = Float(Double((journeyElse?.valueForKey("steps"))! as! NSNumber) / totalSteps!)
+            //print("JIP \(journeyElse?.valueForKey("steps"))")
+            //print("JIP ID \(journeyElse?.valueForKey("journeyID"))")
+        }
        
         
         // check core data for in-progress journey
@@ -61,6 +106,9 @@ class JourneyViewController: UIViewController {
         // else load json into labels
 
         // Do any additional setup after loading the view.
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

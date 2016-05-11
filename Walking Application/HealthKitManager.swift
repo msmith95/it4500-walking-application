@@ -56,13 +56,15 @@ class HealthKitManager: NSObject {
         
         let statisticsSumQuery = HKStatisticsQuery(quantityType: stepsCount!, quantitySamplePredicate: predicate,
                                                    options: sumOption)
-        { [unowned self] (query, result, error) in
+        { (query, result, error) in
             if let sumQuantity = result?.sumQuantity() {
                 
-                let numberOfSteps = Int(sumQuantity.doubleValueForUnit(HKUnit.mileUnit()))
+                let numberOfSteps = Int(sumQuantity.doubleValueForUnit(HKUnit.countUnit()))
                 print(numberOfSteps)
                 NSLog(String(numberOfSteps))
                 completionHandler(numberOfSteps, error)
+            }else{
+                 completionHandler(nil, error)
             }
             
         }
@@ -86,13 +88,15 @@ class HealthKitManager: NSObject {
         
         let statisticsSumQuery = HKStatisticsQuery(quantityType: distanceCount!, quantitySamplePredicate: predicate,
                                                    options: sumOption)
-        { [unowned self] (query, result, error) in
+        { (query, result, error) in
             if let sumQuantity = result?.sumQuantity() {
                 
                 let distance = Float(sumQuantity.doubleValueForUnit(HKUnit.mileUnit()))
                 print(distance)
                 NSLog(String(distance))
                 completionHandler(distance, error)
+            }else{
+                completionHandler(nil, error)
             }
             
         }
@@ -100,7 +104,4 @@ class HealthKitManager: NSObject {
         // Don't forget to execute the query!
         healthKitStore.executeQuery(statisticsSumQuery)
     }
-
-
-
 }

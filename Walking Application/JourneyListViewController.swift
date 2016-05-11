@@ -13,16 +13,33 @@ class JourneyListViewController: UITableViewController {
     let journeyCollection = DataPassing.sharedInstance
     var filteredJourneys: [Journey]!
     var journey: NSManagedObject?
+    let HKM = HealthKitManager()
+    let dp = DataPasser()
+    var jIP: NSManagedObject?
+    var jID:Int? = -1
+    var journeyMove:Journey?
 
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
-
+        
+        HKM.authorizeHealthKit()
+            {(success, error) in
+                print("\(success)")
+                print("\(error)")
+        }
         
         filteredJourneys = journeyCollection.journeys
         print(journeyCollection.journeys.count)
+        
+        jIP = dp.getJourneyInProgress()
+        
+        if(jIP?.valueForKey("journeyID") as! Int >= 0){
+            jID = jIP?.valueForKey("journeyID") as? Int
+            self.performSegueWithIdentifier("journeySegue", sender: self)
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -100,6 +117,9 @@ class JourneyListViewController: UITableViewController {
         
         if let row = self.tableView.indexPathForSelectedRow?.row {
             controller.journey = filteredJourneys[row]
+        }else if jID >= 0{
+            controller.journey = filteredJourneys[jID!]
+            controller.ip = true
         }
     }
     @IBAction func getJourneyInProgressData(sender: AnyObject) {

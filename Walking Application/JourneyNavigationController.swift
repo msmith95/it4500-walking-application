@@ -13,7 +13,9 @@ class JourneyNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationBar.barTintColor = UIColor.orangeColor()
+        self.navigationBar.barTintColor = UIColor(red: 0.478, green: 0.8, blue: 0.266, alpha: 1.0)
+        //.0078  .686 .89
+        //.686 .89 .0078
 
         // Do any additional setup after loading the view.
     }
