@@ -10,7 +10,6 @@
 		4C55541C1CE3AD9A00C10364 /* JourneyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C55541B1CE3AD9A00C10364 /* JourneyNavigationController.swift */; };
 		4C55541E1CE3B87A00C10364 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C55541D1CE3B87A00C10364 /* HealthKit.framework */; };
 		4CCEF5AD1CB6D1660059017C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */; };
-		4CCEF5AF1CB6D1660059017C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEF5AE1CB6D1660059017C /* ViewController.swift */; };
 		4CCEF5B21CB6D1660059017C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCEF5B01CB6D1660059017C /* Main.storyboard */; };
 		4CCEF5B71CB6D1660059017C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCEF5B61CB6D1660059017C /* Assets.xcassets */; };
 		4CCEF5BA1CB6D1660059017C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCEF5B81CB6D1660059017C /* LaunchScreen.storyboard */; };
@@ -37,7 +36,6 @@
 		4C55541F1CE3B87A00C10364 /* Walking Application.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Walking Application.entitlements"; sourceTree = "<group>"; };
 		4CCEF5A91CB6D1650059017C /* Walking Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walking Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CCEF5AE1CB6D1660059017C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4CCEF5B11CB6D1660059017C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CCEF5B61CB6D1660059017C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CCEF5B91CB6D1660059017C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 				D6093E441CD1699A00B3FB0E /* Walking_Application.xcdatamodeld */,
 				4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */,
 				CDFCE24D1CCFE2210027FC8B /* HealthKitManager.swift */,
-				4CCEF5AE1CB6D1660059017C /* ViewController.swift */,
 				4CCEF5B01CB6D1660059017C /* Main.storyboard */,
 				CDBC9F301CDC1EF9003716AA /* TabBarViewController.swift */,
 				CD29F8BB1CE3B85400A73156 /* PassportNavigationController.swift */,
@@ -109,10 +106,10 @@
 				CD10785C1CCC534000225D37 /* PassportViewController.swift */,
 				CD10785A1CCC530A00225D37 /* JourneyListViewController.swift */,
 				CDEB2A2E1CDBC6C3001A07DF /* JourneyListTableViewCell.swift */,
+				4CCEF5B61CB6D1660059017C /* Assets.xcassets */,
 				4CCEF5B81CB6D1660059017C /* LaunchScreen.storyboard */,
 				4CCEF5BB1CB6D1660059017C /* Info.plist */,
 				4C55541B1CE3AD9A00C10364 /* JourneyNavigationController.swift */,
-				4CCEF5B61CB6D1660059017C /* Assets.xcassets */,
 			);
 			path = "Walking Application";
 			sourceTree = "<group>";
@@ -205,7 +202,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CCEF5AF1CB6D1660059017C /* ViewController.swift in Sources */,
 				CD29F8BC1CE3B85400A73156 /* PassportNavigationController.swift in Sources */,
 				D2A6564B1CD1796B00F68B33 /* Journey.swift in Sources */,
 				CDE033C21CD15F3F0003C9F0 /* JourneyViewController.swift in Sources */,
