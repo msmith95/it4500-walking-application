@@ -16,8 +16,8 @@ class JourneyListTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        journeyName.textColor = UIColor.whiteColor()
-        journeyDistance.textColor = UIColor.whiteColor()
+        journeyName.textColor = UIColor.darkGrayColor()
+        journeyDistance.textColor = UIColor.grayColor()
         
         // Initialization code
     }
