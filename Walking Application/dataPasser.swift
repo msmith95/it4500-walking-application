@@ -83,21 +83,40 @@ class DataPasser: NSObject {
     
     
     
-    //THIS GOES ONTO A VIEW CONTROLLER TO SAVE DATA
     
-    /*@IBAction func saveData(sender: AnyObject) {
+    //VARS TO USE//
+    //completedJourneysString
+    //jounrneyIDString
+    //timesCompletedString
+    //timeToFinishJourneyString
+    
+    
+    var passportData:NSManagedObject?
+    
+    func saveCompletedJourney(){
+        
+        let journey = DataPasser()
+        let object = journey.getPassportData()
+        passportData = object
+        
+        
+        
+        
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         
-        if journey == nil {
-            let noteEntity =  NSEntityDescription.entityForName("JourneyInProgress", inManagedObjectContext: managedContext)
-            journey = NSManagedObject(entity: noteEntity!, insertIntoManagedObjectContext:managedContext)
+        if passportData == nil {
+            let noteEntity =  NSEntityDescription.entityForName("Passport", inManagedObjectContext: managedContext)
+            passportData = NSManagedObject(entity: noteEntity!, insertIntoManagedObjectContext:managedContext)
         }
         
-        journey?.setValue(NSDate(), forKey: "endDate")
-        journey?.setValue(NSDate(), forKey: "startDate")
-        journey?.setValue(1, forKey: "journeyID")
-        journey?.setValue(999, forKey: "steps")
+        
+        passportData?.setValue(completedJourneysString, forKey: CompletedJourneys)
+        passportData?.setValue(jounrneyIDString, forKey: journeyId)
+        passportData?.setValue(timesCompletedString, forKey: timesCompleted)
+        passportData?.setValue(timeToFinishJourneyString, forKey: timeToFinishJounrey)
+        
+        
         
         // Complete save and handle potential error
         do {
@@ -105,8 +124,9 @@ class DataPasser: NSObject {
         } catch let error as NSError {
             print("Could not save \(error), \(error.userInfo)")
         }
-    }*/
     
+    
+    }
     
     
     
