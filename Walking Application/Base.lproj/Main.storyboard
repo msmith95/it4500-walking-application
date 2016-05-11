@@ -301,9 +301,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="vvk-6w-OSc" firstAttribute="leading" secondItem="L5u-ng-XnU" secondAttribute="leadingMargin" id="4O6-wD-1Bg"/>
                             <constraint firstItem="AGK-Xz-rn3" firstAttribute="top" secondItem="JE9-MU-Rhx" secondAttribute="bottom" constant="27" id="7S1-LA-ToV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2HI-Ih-2DB" secondAttribute="trailing" id="7qo-at-mwS"/>
                             <constraint firstItem="kio-Lr-gJe" firstAttribute="centerX" secondItem="vvk-6w-OSc" secondAttribute="centerX" id="AUe-le-7np"/>
+                            <constraint firstItem="AGK-Xz-rn3" firstAttribute="leading" secondItem="L5u-ng-XnU" secondAttribute="leadingMargin" id="Anb-t9-3L9"/>
                             <constraint firstItem="JE9-MU-Rhx" firstAttribute="top" secondItem="2HI-Ih-2DB" secondAttribute="bottom" constant="71" id="EQb-Kn-koe"/>
                             <constraint firstItem="JE9-MU-Rhx" firstAttribute="centerX" secondItem="2HI-Ih-2DB" secondAttribute="centerX" id="Icu-E4-vxp"/>
                             <constraint firstItem="vvk-6w-OSc" firstAttribute="top" secondItem="AGK-Xz-rn3" secondAttribute="bottom" constant="50" id="Kip-0L-nL0"/>
@@ -311,6 +313,8 @@
                             <constraint firstItem="2HI-Ih-2DB" firstAttribute="top" secondItem="Wbb-O3-j3r" secondAttribute="bottom" id="TqD-cE-yyE"/>
                             <constraint firstItem="2HI-Ih-2DB" firstAttribute="leading" secondItem="L5u-ng-XnU" secondAttribute="leadingMargin" id="hqC-U7-dvG"/>
                             <constraint firstItem="vvk-6w-OSc" firstAttribute="centerX" secondItem="AGK-Xz-rn3" secondAttribute="centerX" id="lgO-bA-nhW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AGK-Xz-rn3" secondAttribute="trailing" id="yAN-P7-sdI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vvk-6w-OSc" secondAttribute="trailing" id="ykS-Gd-EpD"/>
                             <constraint firstItem="AGK-Xz-rn3" firstAttribute="centerX" secondItem="L5u-ng-XnU" secondAttribute="centerX" id="z7h-8i-fhF"/>
                         </constraints>
                     </view>

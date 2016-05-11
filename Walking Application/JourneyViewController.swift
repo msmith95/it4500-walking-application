@@ -42,11 +42,11 @@ class JourneyViewController: UIViewController {
             journeyDescription.text = j.description
             journeyDescription.textAlignment = NSTextAlignment.Center
             journeyDescription.textColor = UIColor.whiteColor()
-            journeyDescription.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
-            journeyDistance.text = String(j.distance)
+            journeyDescription.font = UIFont.systemFontOfSize(12, weight: UIFontWeightMedium)
+            journeyDistance.text = String(j.distance) + " miles"
             journeyDistance.textAlignment = NSTextAlignment.Center
             journeyDistance.textColor = UIColor.whiteColor()
-            journeyDistance.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
+            journeyDistance.font = UIFont.systemFontOfSize(12, weight: UIFontWeightMedium)
             // don't have images journeyView.image = UIImage(named: "\(j.fileName)") 
         }
         
