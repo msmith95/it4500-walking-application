@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="leC-zG-pVb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="leC-zG-pVb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -27,8 +27,8 @@
         <!--Passport-->
         <scene sceneID="P0D-TS-fEC">
             <objects>
-                <navigationController id="dhV-EJ-LO0" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Passport" image="journey" id="Iou-f9-I8J"/>
+                <navigationController id="dhV-EJ-LO0" customClass="PassportNavigationController" customModule="Walking_Application" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Passport" image="passport icon" id="Iou-f9-I8J"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="L76-gb-Bkr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -149,11 +149,11 @@
             </objects>
             <point key="canvasLocation" x="-2830" y="403"/>
         </scene>
-        <!--Home-->
+        <!--Journeys-->
         <scene sceneID="BdY-zI-a2m">
             <objects>
                 <navigationController id="5Qd-7h-QF4" customClass="JourneyNavigationController" customModule="Walking_Application" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="house" id="bh7-v3-xOc"/>
+                    <tabBarItem key="tabBarItem" title="Journeys" image="journey icon " id="bh7-v3-xOc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="dBq-qf-xOF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -332,7 +332,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="house" width="29" height="26"/>
-        <image name="journey" width="28" height="28"/>
+        <image name="journey icon " width="25" height="25"/>
+        <image name="passport icon" width="25" height="22"/>
     </resources>
 </document>

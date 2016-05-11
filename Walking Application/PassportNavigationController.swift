@@ -1,20 +1,19 @@
 //
-//  TabBarViewController.swift
+//  PassportNavigationController.swift
 //  Walking Application
 //
-//  Created by Seth vonSeggern on 5/5/16.
+//  Created by Seth vonSeggern on 5/11/16.
 //  Copyright © 2016 Walking Team A. All rights reserved.
 //
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
+class PassportNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.selectedIndex = 0
-        self.tabBar.barTintColor = UIColor(red: 0.0078, green: 0.686, blue: 0.89, alpha: 1.0)
-        self.tabBar.translucent = false
+        self.navigationBar.barTintColor = UIColor(red: 0.0078, green: 0.686, blue: 0.89, alpha: 1.0)
+        self.navigationBar.translucent = false
 
         // Do any additional setup after loading the view.
     }

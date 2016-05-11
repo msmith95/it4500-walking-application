@@ -96,12 +96,12 @@ class JourneyListViewController: UITableViewController {
         
         let journey = filteredJourneys[indexPath.row]
         cell.journeyName.text = journey.journeyName
-        cell.journeyDistance.text = String(journey.distance) + " miles"
+        cell.journeyDistance.text = String(journey.distance) + " miles" + " : " + String(journey.steps) + " steps"
         print(journey.distance)
         
         cell.accessoryType = .DisclosureIndicator//enum
         
-        cell.backgroundColor = UIColor(red: 0.05, green: 0.71, blue: 0.93, alpha: 1)
+        //cell.backgroundColor = UIColor(red: 0.05, green: 0.71, blue: 0.93, alpha: 1)
         
 
         return cell

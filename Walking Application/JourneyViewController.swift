@@ -61,11 +61,11 @@ class JourneyViewController: UIViewController {
             totalSteps = j.steps
             journeyDescription.text = j.description
             journeyDescription.textAlignment = NSTextAlignment.Center
-            journeyDescription.textColor = UIColor.whiteColor()
+            journeyDescription.textColor = UIColor.darkGrayColor()
             journeyDescription.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
-            journeyDistance.text = String(j.distance) + " miles"
+            journeyDistance.text = String(j.distance) + " miles" 
             journeyDistance.textAlignment = NSTextAlignment.Center
-            journeyDistance.textColor = UIColor.whiteColor()
+            journeyDistance.textColor = UIColor.darkGrayColor()
             journeyDistance.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
             journeyView.image = UIImage(named: j.fileName)
 
@@ -129,6 +129,7 @@ class JourneyViewController: UIViewController {
         let journey = DataPasser()
         let object = journey.getJourneyInProgress()
         if let object = object {
+            stepsTaken = object.valueForKey("steps") as? Double
             if object.valueForKey("journeyID") as! Int > 0 {
                 print("It Worked")
                 let alert = UIAlertController(title: "Override Journey", message: "You already have a journey in progress. Do you want to override the current one? Doing so will delete your current progress", preferredStyle: UIAlertControllerStyle.Alert)
@@ -174,14 +175,17 @@ class JourneyViewController: UIViewController {
         }
         journeyProgress.hidden = false
         journeyStart.hidden = true
-        //journeyProgress.progress = Float (steps taken from core/totalSteps)
+        journeyProgress.progress = Float (stepsTaken!/totalSteps!)
+        print(stepsTaken)
+        print(totalSteps)
+        print(stepsTaken!/totalSteps!)
         journeyDescription.text = name
         journeyDescription.textAlignment = NSTextAlignment.Center
-        journeyDescription.textColor = UIColor.whiteColor()
+        journeyDescription.textColor = UIColor.darkGrayColor()
         journeyDescription.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
         journeyDistance.text = journey?.description
         journeyDistance.textAlignment = NSTextAlignment.Center
-        journeyDistance.textColor = UIColor.whiteColor()
+        journeyDistance.textColor = UIColor.darkGrayColor()
         journeyDistance.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
     }
 }
