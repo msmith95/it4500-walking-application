@@ -23,7 +23,8 @@ class JourneyListViewController: UITableViewController {
         
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor(red: 0.07, green:0.94, blue:0.63, alpha:1.0)
+        self.view.backgroundColor = UIColor(red: 0.686, green:0.89, blue:0.0078, alpha:1.0)
+
         
         HKM.authorizeHealthKit()
             {(success, error) in

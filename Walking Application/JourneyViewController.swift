@@ -17,6 +17,7 @@ class JourneyViewController: UIViewController {
     var name: String?
     var totalSteps : Double?
     var journeyElse:NSManagedObject?
+    var stepsTaken : Double?
     let HKM = HealthKitManager()
     let dp = DataPasser()
     var startDate:NSDate?
@@ -43,6 +44,11 @@ class JourneyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.backgroundColor = UIColor(red: 0.686, green:0.89, blue:0.0078, alpha:1.0)
+        journeyDescription.backgroundColor = UIColor(red: 0.686, green:0.89, blue:0.0078, alpha:1.0)
+        journeyDistance.backgroundColor = UIColor(red: 0.686, green:0.89, blue:0.0078, alpha:1.0)
+        journeyStart.backgroundColor = UIColor(red: 0.0078, green: 0.686, blue: 0.89, alpha: 1.0)
+        journeyStart.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Normal)
         
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
