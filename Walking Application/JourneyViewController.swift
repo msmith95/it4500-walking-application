@@ -43,11 +43,10 @@ class JourneyViewController: UIViewController {
             journeyDescription.text = j.description
             journeyDescription.textAlignment = NSTextAlignment.Center
             journeyDescription.textColor = UIColor.whiteColor()
-            journeyDescription.font = UIFont.systemFontOfSize(12, weight: UIFontWeightMedium)
+            journeyDescription.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
             journeyDistance.text = String(j.distance) + " miles"
             journeyDistance.textAlignment = NSTextAlignment.Center
             journeyDistance.textColor = UIColor.whiteColor()
- 
             journeyDistance.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
            // journeyView.image = UIImage(named: j.fileName)
 
@@ -128,7 +127,13 @@ class JourneyViewController: UIViewController {
         journeyStart.hidden = true
         //journeyProgress.progress = Float (steps taken from core/totalSteps)
         journeyDescription.text = name
+        journeyDescription.textAlignment = NSTextAlignment.Center
+        journeyDescription.textColor = UIColor.whiteColor()
+        journeyDescription.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
         journeyDistance.text = journey?.description
+        journeyDistance.textAlignment = NSTextAlignment.Center
+        journeyDistance.textColor = UIColor.whiteColor()
+        journeyDistance.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
     }
 }
 
