@@ -32,14 +32,6 @@ class JourneyListViewController: UITableViewController {
             }))
             self.presentViewController(alert, animated: true, completion: nil)
         }
-
-    }
-    
-    override func viewDidLoad() {
-        
-        super.viewDidLoad()
-        
-        self.view.backgroundColor = UIColor(red: 0.686, green:0.89, blue:0.0078, alpha:1.0)
         
         let healthKitStore:HKHealthStore = HKHealthStore()
         
@@ -57,7 +49,13 @@ class JourneyListViewController: UITableViewController {
             }
         })
 
-
+    }
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(red: 0.686, green:0.89, blue:0.0078, alpha:1.0)
         
         HKM.authorizeHealthKit()
             {(success, error) in

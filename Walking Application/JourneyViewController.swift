@@ -41,9 +41,9 @@ class JourneyViewController: UIViewController {
         if(journeyElse?.valueForKey("journeyID")! as? NSObject == id){
             journeyProgress.hidden = false
             journeyStart.hidden = true
+            var trueSteps:Int?
             HKM.getSteps(journeyElse?.valueForKey("startDate") as! NSDate)
             {(steps:Int?, error:NSError?) in
-                var trueSteps:Int?
                 if(steps == nil){
                     trueSteps = 0
                 }else{
@@ -58,9 +58,8 @@ class JourneyViewController: UIViewController {
                 } catch let error as NSError {
                     print("Could not save \(error), \(error.userInfo)")
                 }
-                
+                self.journeyProgress.progress = Float(Double(trueSteps!) / self.totalSteps!)
             }
-            journeyProgress.progress = Float(Double((journeyElse?.valueForKey("steps"))! as! NSNumber) / totalSteps!)
        
         }
     }
@@ -190,7 +189,7 @@ class JourneyViewController: UIViewController {
         }
         journeyProgress.hidden = false
         journeyStart.hidden = true
-        journeyProgress.progress = Float (stepsTaken!/totalSteps!)
+        journeyProgress.progress = 0.0
         print(stepsTaken)
         print(totalSteps)
         print(stepsTaken!/totalSteps!)
