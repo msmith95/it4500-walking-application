@@ -16,6 +16,7 @@
 		CD10785B1CCC530A00225D37 /* JourneyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10785A1CCC530A00225D37 /* JourneyListViewController.swift */; };
 		CD10785D1CCC534000225D37 /* PassportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD10785C1CCC534000225D37 /* PassportViewController.swift */; };
 		CD29F8BC1CE3B85400A73156 /* PassportNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD29F8BB1CE3B85400A73156 /* PassportNavigationController.swift */; };
+		CDABC7511CE428D100C0AF15 /* launchScreenImage.png in Resources */ = {isa = PBXBuildFile; fileRef = CDABC7501CE428D100C0AF15 /* launchScreenImage.png */; };
 		CDBC9F311CDC1EF9003716AA /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBC9F301CDC1EF9003716AA /* TabBarViewController.swift */; };
 		CDE033C21CD15F3F0003C9F0 /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C11CD15F3F0003C9F0 /* JourneyViewController.swift */; };
 		CDE033C41CD15F5F0003C9F0 /* PassportJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE033C31CD15F5F0003C9F0 /* PassportJourneyViewController.swift */; };
@@ -43,6 +44,7 @@
 		CD10785A1CCC530A00225D37 /* JourneyListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyListViewController.swift; sourceTree = "<group>"; };
 		CD10785C1CCC534000225D37 /* PassportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassportViewController.swift; sourceTree = "<group>"; };
 		CD29F8BB1CE3B85400A73156 /* PassportNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassportNavigationController.swift; sourceTree = "<group>"; };
+		CDABC7501CE428D100C0AF15 /* launchScreenImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launchScreenImage.png; path = ../../../../../launchScreenImage.png; sourceTree = "<group>"; };
 		CDBC9F301CDC1EF9003716AA /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		CDE033C11CD15F3F0003C9F0 /* JourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
 		CDE033C31CD15F5F0003C9F0 /* PassportJourneyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassportJourneyViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				CD10785C1CCC534000225D37 /* PassportViewController.swift */,
 				CD10785A1CCC530A00225D37 /* JourneyListViewController.swift */,
 				CDEB2A2E1CDBC6C3001A07DF /* JourneyListTableViewCell.swift */,
+				CDABC7501CE428D100C0AF15 /* launchScreenImage.png */,
 				4CCEF5B61CB6D1660059017C /* Assets.xcassets */,
 				4CCEF5B81CB6D1660059017C /* LaunchScreen.storyboard */,
 				4CCEF5BB1CB6D1660059017C /* Info.plist */,
@@ -187,6 +190,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDABC7511CE428D100C0AF15 /* launchScreenImage.png in Resources */,
 				D23BFE761CE28E0800093F10 /* journeys.json in Resources */,
 				4CCEF5BA1CB6D1660059017C /* LaunchScreen.storyboard in Resources */,
 				4CCEF5B71CB6D1660059017C /* Assets.xcassets in Resources */,
