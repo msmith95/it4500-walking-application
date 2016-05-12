@@ -91,13 +91,18 @@ class DataPasser: NSObject {
     //timeToFinishJourneyString
     
     
-    var passportData:NSManagedObject?
+    /*var passportData:NSManagedObject?
     
-    func saveCompletedJourney(){
+    func saveCompletedJourney(completedJourney: Int, journeyID:Int, timeToFinish:NSDate){
+        
+        let completed = 1
+        
         
         let journey = DataPasser()
         let object = journey.getPassportData()
         passportData = object
+        
+        passportData.
         
         
         
@@ -111,10 +116,10 @@ class DataPasser: NSObject {
         }
         
         
-        passportData?.setValue(completedJourneysString, forKey: CompletedJourneys)
-        passportData?.setValue(jounrneyIDString, forKey: journeyId)
-        passportData?.setValue(timesCompletedString, forKey: timesCompleted)
-        passportData?.setValue(timeToFinishJourneyString, forKey: timeToFinishJounrey)
+        passportData?.setValue(completedJourneysString, forKey: "CompletedJourneys")
+        passportData?.setValue(jounrneyIDString, forKey: "journeyId")
+        passportData?.setValue(timesCompletedString, forKey: "timesCompleted")
+        passportData?.setValue(timeToFinishJourneyString, forKey: "timeToFinishJounrey")
         
         
         
@@ -126,7 +131,7 @@ class DataPasser: NSObject {
         }
     
     
-    }
+    }*/
     
     
     
