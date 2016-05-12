@@ -5,7 +5,7 @@
 			"fileName": "Pisa.png",
             "journeyName" : "Leaning Tower of Pisa",
             "journeyID" : 0,
-			"description" : "This is the description for journey 1",
+                "description" : "Originally designed to be a bell tower for the church,the tower only stood upright for 5 years until the completion of the third floor in 1178. Naturally, climbing to the top of the tower has become the most popular tourist activity in Pisa.",
 			"steps" : 74,
 			"distance" : 0.035
 		},
@@ -21,7 +21,7 @@
             "fileName": "MtHollywood.png",
             "journeyName" : "Mt. Hollywood",
             "journeyID" : 2,
-                "description" : "Mount Hollywood, elevation of 1,640 feet, is the second tallest peak in Griffith Park and offers amazing 360-veiws of the Griffith Observatory, Hollywood, California and the ocean. &quot;HOLLYWOOD&quot; is spelled out in 45-foot- tall white capital letters and is 350 feet (110 meters) long. It was originally created in 1923 as an advertisement for a local real estate development, but is now an American cultural icon.",
+                "description" : "Mount Hollywood, elevation of 1,640 feet, is the second tallest peak in Griffith Park and offers amazing 360-veiws of the Griffith Observatory, Hollywood, California and the ocean. 'HOLLYWOOD' is spelled out in 45-foot- tall white capital letters and is 350 feet (110 meters) long. It was originally created in 1923 as an advertisement for a local real estate development, but is now an American cultural icon.",
             "steps" : 13728,
             "distance" : 6.5
         },
@@ -29,7 +29,7 @@
             "fileName": "MtFugi.png",
             "journeyName" : "Mt. Fuji",
             "journeyID" : 3,
-            "description" : "Mount Fuji is a 12,389 foot active volcano located on Honshu Island, Japan. It is the tallest peak in Japan and has been the subject of art and literature for centuries. The Mt. Fuji area is incredibly scenic consisting of: the Five Fuji Lakes, a number of waterfalls, hot springs, and miles of Cherry Blossoms.",
+            "description" : "Mount Fuji is a 12,389 foot active volcano located on Honshu Island, Japan. It is the tallest peak in Japan and has been the subject of art and literature for centuries. The Mt. Fuji area is incredibly scenic consisting of: the Five Fuji Lakes, a number of waterfalls, and hot springs.",
             "steps" : 164736,
             "distance" : 78
         },

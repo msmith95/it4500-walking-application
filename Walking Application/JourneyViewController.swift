@@ -70,7 +70,7 @@ class JourneyViewController: UIViewController {
             //self.navigationController?.viewControllers = [self]
             self.navigationController?.navigationItem.hidesBackButton = true
         }
-    
+        if(journeyElse?.valueForKey("journeyID") as? Int == id){
             if((journeyElse?.valueForKey("steps"))! as? Double >= journey?.steps){
                 let alert = UIAlertController(title: "Journey Completed", message: "A stamp has been added to your passport.  Go out there and start another", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: {
@@ -78,7 +78,7 @@ class JourneyViewController: UIViewController {
                 }))
                 self.presentViewController(alert, animated: true, completion: nil)
             }
-        
+        }
     }
     
     override func viewDidLoad() {
