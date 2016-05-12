@@ -21,7 +21,7 @@
             "fileName": "MtHollywood.png",
             "journeyName" : "Mt. Hollywood",
             "journeyID" : 2,
-            "description" : "This is the description for journey 2",
+                "description" : "Mount Hollywood, elevation of 1,640 feet, is the second tallest peak in Griffith Park and offers amazing 360-veiws of the Griffith Observatory, Hollywood, California and the ocean. &quot;HOLLYWOOD&quot; is spelled out in 45-foot- tall white capital letters and is 350 feet (110 meters) long. It was originally created in 1923 as an advertisement for a local real estate development, but is now an American cultural icon.",
             "steps" : 13728,
             "distance" : 6.5
         },
@@ -29,15 +29,15 @@
             "fileName": "MtFugi.png",
             "journeyName" : "Mt. Fuji",
             "journeyID" : 3,
-            "description" : "Mount Fuji is a 12,389 foot active volcano located on Honshu Island, Japan. It is the tallest peak in Japan and has been the subject of art and literature for centuries. The top of Mount Fuji is actually part of the Fujisan Hongū Sengen Taisha, a massive Shinto shrine. The Mt. Fuji area is incredibly scenic consisting of: the Five Fuji Lakes, a number of waterfalls, hot springs, and miles of Cherry Blossoms.",
+            "description" : "Mount Fuji is a 12,389 foot active volcano located on Honshu Island, Japan. It is the tallest peak in Japan and has been the subject of art and literature for centuries. The Mt. Fuji area is incredibly scenic consisting of: the Five Fuji Lakes, a number of waterfalls, hot springs, and miles of Cherry Blossoms.",
             "steps" : 164736,
             "distance" : 78
         },
         {
-            "fileName": "Appalachian.png",
+            "fileName": "AppalationTrail.png",
             "journeyName" : "Appalachian Trail",
             "journeyID" : 4,
-            "description" : "The Appalachian Trail is a hiking trail located in the Eastern United States. The trail crosses through 14 states; extending roughly 2,200 miles between Springer Mountain in Georgia and Mount Katahdin in Maine. There are campsites, resupply stations, and miles of wilderness all maintained by the Appalachian Trail Conservancy (ATC).",
+            "description" : "The Appalachian Trail is a hiking trail located in the Eastern United States. The trail crosses through 14 states; extending roughly 2,200 miles between Springer Mountain in Georgia and Mount Katahdin in Maine.",
             "steps" : 4625280,
             "distance" : 2190
         },
