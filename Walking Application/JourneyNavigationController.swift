@@ -15,6 +15,7 @@ class JourneyNavigationController: UINavigationController {
 
         self.navigationBar.barTintColor = UIColor(red: 0.0078, green: 0.686, blue: 0.89, alpha: 1.0)
         self.navigationBar.tintColor = UIColor.whiteColor()
+        print("It loaded!!!")
         //.0078  .686 .89
         //.686 .89 .0078
 

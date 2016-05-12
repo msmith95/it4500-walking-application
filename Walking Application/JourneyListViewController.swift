@@ -69,10 +69,33 @@ class JourneyListViewController: UITableViewController {
         filteredJourneys = journeyCollection.journeys
         print(journeyCollection.journeys.count)
         
-        jIP = dp.getJourneyInProgress()
+        journey = dp.getJourneyInProgress()
         
-        if(jIP?.valueForKey("journeyID") as! Int >= 0){
-            jID = jIP?.valueForKey("journeyID") as? Int
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+
+        //journey = nil
+        if journey == nil {
+            let noteEntity =  NSEntityDescription.entityForName("JourneyInProgress", inManagedObjectContext: managedContext)
+            journey = NSManagedObject(entity: noteEntity!, insertIntoManagedObjectContext:managedContext)
+            journey?.setValue(NSDate(), forKey: "endDate")
+            journey?.setValue(NSDate(), forKey: "startDate")
+            journey?.setValue(-1, forKey: "journeyID")
+            journey?.setValue(0, forKey: "steps")
+            
+        }
+        
+        // Complete save and handle potential error
+        do {
+         try managedContext.save()
+         print("It saved")
+         } catch let error as NSError {
+         print("Could not save \(error), \(error.userInfo)")
+         }
+
+        
+        if(journey?.valueForKey("journeyID") as! Int >= 0){
+            jID = journey?.valueForKey("journeyID") as? Int
             self.performSegueWithIdentifier("journeySegue", sender: self)
         }
 
@@ -82,29 +105,9 @@ class JourneyListViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let managedContext = appDelegate.managedObjectContext
         
-        journey = dp.getJourneyInProgress()
-        //journey = nil
-        if journey == nil {
-            let noteEntity =  NSEntityDescription.entityForName("JourneyInProgress", inManagedObjectContext: managedContext)
-            journey = NSManagedObject(entity: noteEntity!, insertIntoManagedObjectContext:managedContext)
-            journey?.setValue(NSDate(), forKey: "endDate")
-            journey?.setValue(NSDate(), forKey: "startDate")
-            journey?.setValue(-1, forKey: "journeyID")
-            journey?.setValue(0, forKey: "steps")
-
-        }
+       
         
-        // Complete save and handle potential error
-        /*do {
-            try managedContext.save()
-            print("It saved")
-        } catch let error as NSError {
-            print("Could not save \(error), \(error.userInfo)")
-        }*/
-
     }
 
     override func didReceiveMemoryWarning() {

@@ -24,7 +24,10 @@ class DataPasser: NSObject {
             try managedContext.executeFetchRequest(fetchRequest) as? [NSManagedObject]
             
             if let results = fetchedResults {
-                //print(results)
+                print(results)
+                if(results.count == 0){
+                    return nil
+                }
                 return results[0]
             } else {
                 print("Could not fetch journey in progress")
@@ -81,47 +84,21 @@ class DataPasser: NSObject {
     }
     
     
+    var passPort: NSManagedObject?
     
-    
-    
-    //VARS TO USE//
-    //completedJourneysString
-    //jounrneyIDString
-    //timesCompletedString
-    //timeToFinishJourneyString
-    
-    
-    /*var passportData:NSManagedObject?
-    
-    func saveCompletedJourney(completedJourney: Int, journeyID:Int, timeToFinish:NSDate){
-        
-        let completed = 1
-        
-        
-        let journey = DataPasser()
-        let object = journey.getPassportData()
-        passportData = object
-        
-        passportData.
-        
-        
-        
-        
+    func savePassport(completedJourney: Int, journeyID:Int, timeToFinish:Int) {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         
-        if passportData == nil {
-            let noteEntity =  NSEntityDescription.entityForName("Passport", inManagedObjectContext: managedContext)
-            passportData = NSManagedObject(entity: noteEntity!, insertIntoManagedObjectContext:managedContext)
+        if passPort == nil {
+            let passportEntity =  NSEntityDescription.entityForName("Passport", inManagedObjectContext: managedContext)
+            passPort = NSManagedObject(entity: passportEntity!, insertIntoManagedObjectContext:managedContext)
         }
         
-        
-        passportData?.setValue(completedJourneysString, forKey: "CompletedJourneys")
-        passportData?.setValue(jounrneyIDString, forKey: "journeyId")
-        passportData?.setValue(timesCompletedString, forKey: "timesCompleted")
-        passportData?.setValue(timeToFinishJourneyString, forKey: "timeToFinishJounrey")
-        
-        
+        passPort?.setValue(completedJourney, forKey: "CompletedJourneys")
+        passPort?.setValue(journeyID, forKey: "journeyId")
+        passPort?.setValue(journeyID, forKey: "journeyId")
+        passPort?.setValue(timeToFinish, forKey: "timeToFinishJounrey")
         
         // Complete save and handle potential error
         do {
@@ -129,21 +106,7 @@ class DataPasser: NSObject {
         } catch let error as NSError {
             print("Could not save \(error), \(error.userInfo)")
         }
-    
-    
-    }*/
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+        
+    }
     
 }
