@@ -56,7 +56,7 @@
 		4C5554381CE4DEFC00C10364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/gWallRed.png; sourceTree = "<group>"; };
 		4C55543A1CE4DEFC00C10364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/hollywoodBlue.png; sourceTree = "<group>"; };
 		4C55543C1CE4DEFC00C10364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/leaningPurple.png; sourceTree = "<group>"; };
-		4CCEF5A91CB6D1650059017C /* Walking Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walking Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CCEF5A91CB6D1650059017C /* Odyssme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Odyssme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CCEF5B11CB6D1660059017C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CCEF5B61CB6D1660059017C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 		4CCEF5AA1CB6D1650059017C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4CCEF5A91CB6D1650059017C /* Walking Application.app */,
+				4CCEF5A91CB6D1650059017C /* Odyssme.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,9 +159,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4CCEF5A81CB6D1650059017C /* Walking Application */ = {
+		4CCEF5A81CB6D1650059017C /* Odyssme */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4CCEF5BE1CB6D1660059017C /* Build configuration list for PBXNativeTarget "Walking Application" */;
+			buildConfigurationList = 4CCEF5BE1CB6D1660059017C /* Build configuration list for PBXNativeTarget "Odyssme" */;
 			buildPhases = (
 				4CCEF5A51CB6D1650059017C /* Sources */,
 				4CCEF5A61CB6D1650059017C /* Frameworks */,
@@ -171,9 +171,9 @@
 			);
 			dependencies = (
 			);
-			name = "Walking Application";
+			name = Odyssme;
 			productName = "Walking Application";
-			productReference = 4CCEF5A91CB6D1650059017C /* Walking Application.app */;
+			productReference = 4CCEF5A91CB6D1650059017C /* Odyssme.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -197,7 +197,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4CCEF5A41CB6D1650059017C /* Build configuration list for PBXProject "Walking Application" */;
+			buildConfigurationList = 4CCEF5A41CB6D1650059017C /* Build configuration list for PBXProject "Odyssme" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -210,7 +210,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4CCEF5A81CB6D1650059017C /* Walking Application */,
+				4CCEF5A81CB6D1650059017C /* Odyssme */,
 			);
 		};
 /* End PBXProject section */
@@ -478,7 +478,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.cs.Walking-Application";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Odyssme;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -494,7 +494,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.missouri.cs.Walking-Application";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Odyssme;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
@@ -502,7 +502,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4CCEF5A41CB6D1650059017C /* Build configuration list for PBXProject "Walking Application" */ = {
+		4CCEF5A41CB6D1650059017C /* Build configuration list for PBXProject "Odyssme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4CCEF5BC1CB6D1660059017C /* Debug */,
@@ -511,7 +511,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4CCEF5BE1CB6D1660059017C /* Build configuration list for PBXNativeTarget "Walking Application" */ = {
+		4CCEF5BE1CB6D1660059017C /* Build configuration list for PBXNativeTarget "Odyssme" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4CCEF5BF1CB6D1660059017C /* Debug */,
