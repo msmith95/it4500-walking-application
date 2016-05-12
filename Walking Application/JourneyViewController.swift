@@ -193,14 +193,6 @@ class JourneyViewController: UIViewController {
         print(stepsTaken)
         print(totalSteps)
         print(stepsTaken!/totalSteps!)
-        journeyDescription.text = name
-        journeyDescription.textAlignment = NSTextAlignment.Center
-        journeyDescription.textColor = UIColor.darkGrayColor()
-        journeyDescription.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
-        journeyDistance.text = journey?.description
-        journeyDistance.textAlignment = NSTextAlignment.Center
-        journeyDistance.textColor = UIColor.darkGrayColor()
-        journeyDistance.font = UIFont.systemFontOfSize(17, weight: UIFontWeightMedium)
     }
 }
 
