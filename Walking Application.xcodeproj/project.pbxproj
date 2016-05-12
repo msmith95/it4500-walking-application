@@ -9,6 +9,17 @@
 /* Begin PBXBuildFile section */
 		4C55541C1CE3AD9A00C10364 /* JourneyNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C55541B1CE3AD9A00C10364 /* JourneyNavigationController.swift */; };
 		4C55541E1CE3B87A00C10364 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C55541D1CE3B87A00C10364 /* HealthKit.framework */; };
+		4C55542C1CE4D49100C10364 /* AppalachainTrail.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5554221CE4D49100C10364 /* AppalachainTrail.png */; };
+		4C55542D1CE4D49100C10364 /* GreatWall.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5554241CE4D49100C10364 /* GreatWall.png */; };
+		4C55542E1CE4D49100C10364 /* Hollywood.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5554261CE4D49100C10364 /* Hollywood.png */; };
+		4C55542F1CE4D49100C10364 /* MountFuji.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5554281CE4D49100C10364 /* MountFuji.png */; };
+		4C5554301CE4D49100C10364 /* Pisa.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C55542A1CE4D49100C10364 /* Pisa.png */; };
+		4C55543D1CE4DEFC00C10364 /* appTrailRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5554311CE4DEFC00C10364 /* appTrailRed.png */; };
+		4C55543E1CE4DEFC00C10364 /* everestGreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5554331CE4DEFC00C10364 /* everestGreen.png */; };
+		4C55543F1CE4DEFC00C10364 /* fujiPurple.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5554351CE4DEFC00C10364 /* fujiPurple.png */; };
+		4C5554401CE4DEFC00C10364 /* gWallRed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5554371CE4DEFC00C10364 /* gWallRed.png */; };
+		4C5554411CE4DEFC00C10364 /* hollywoodBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C5554391CE4DEFC00C10364 /* hollywoodBlue.png */; };
+		4C5554421CE4DEFC00C10364 /* leaningPurple.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C55543B1CE4DEFC00C10364 /* leaningPurple.png */; };
 		4CCEF5AD1CB6D1660059017C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */; };
 		4CCEF5B21CB6D1660059017C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CCEF5B01CB6D1660059017C /* Main.storyboard */; };
 		4CCEF5B71CB6D1660059017C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CCEF5B61CB6D1660059017C /* Assets.xcassets */; };
@@ -34,6 +45,17 @@
 		4C55541B1CE3AD9A00C10364 /* JourneyNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JourneyNavigationController.swift; sourceTree = "<group>"; };
 		4C55541D1CE3B87A00C10364 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		4C55541F1CE3B87A00C10364 /* Walking Application.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Walking Application.entitlements"; sourceTree = "<group>"; };
+		4C5554231CE4D49100C10364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/AppalachainTrail.png; sourceTree = "<group>"; };
+		4C5554251CE4D49100C10364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/GreatWall.png; sourceTree = "<group>"; };
+		4C5554271CE4D49100C10364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/Hollywood.png; sourceTree = "<group>"; };
+		4C5554291CE4D49100C10364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/MountFuji.png; sourceTree = "<group>"; };
+		4C55542B1CE4D49100C10364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/Pisa.png; sourceTree = "<group>"; };
+		4C5554321CE4DEFC00C10364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/appTrailRed.png; sourceTree = "<group>"; };
+		4C5554341CE4DEFC00C10364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/everestGreen.png; sourceTree = "<group>"; };
+		4C5554361CE4DEFC00C10364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/fujiPurple.png; sourceTree = "<group>"; };
+		4C5554381CE4DEFC00C10364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/gWallRed.png; sourceTree = "<group>"; };
+		4C55543A1CE4DEFC00C10364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/hollywoodBlue.png; sourceTree = "<group>"; };
+		4C55543C1CE4DEFC00C10364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/leaningPurple.png; sourceTree = "<group>"; };
 		4CCEF5A91CB6D1650059017C /* Walking Application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Walking Application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCEF5AC1CB6D1660059017C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CCEF5B11CB6D1660059017C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -117,6 +139,17 @@
 		D23BFE741CE28DF100093F10 /* journeys */ = {
 			isa = PBXGroup;
 			children = (
+				4C5554311CE4DEFC00C10364 /* appTrailRed.png */,
+				4C5554331CE4DEFC00C10364 /* everestGreen.png */,
+				4C5554351CE4DEFC00C10364 /* fujiPurple.png */,
+				4C5554371CE4DEFC00C10364 /* gWallRed.png */,
+				4C5554391CE4DEFC00C10364 /* hollywoodBlue.png */,
+				4C55543B1CE4DEFC00C10364 /* leaningPurple.png */,
+				4C5554221CE4D49100C10364 /* AppalachainTrail.png */,
+				4C5554241CE4D49100C10364 /* GreatWall.png */,
+				4C5554261CE4D49100C10364 /* Hollywood.png */,
+				4C5554281CE4D49100C10364 /* MountFuji.png */,
+				4C55542A1CE4D49100C10364 /* Pisa.png */,
 				D23BFE751CE28E0800093F10 /* journeys.json */,
 				D2CC8EDD1CE2E23700D51F10 /* MtEverest.png */,
 			);
@@ -188,10 +221,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				D23BFE761CE28E0800093F10 /* journeys.json in Resources */,
+				4C55542E1CE4D49100C10364 /* Hollywood.png in Resources */,
+				4C5554411CE4DEFC00C10364 /* hollywoodBlue.png in Resources */,
+				4C5554301CE4D49100C10364 /* Pisa.png in Resources */,
+				4C5554401CE4DEFC00C10364 /* gWallRed.png in Resources */,
 				4CCEF5BA1CB6D1660059017C /* LaunchScreen.storyboard in Resources */,
 				4CCEF5B71CB6D1660059017C /* Assets.xcassets in Resources */,
+				4C55543D1CE4DEFC00C10364 /* appTrailRed.png in Resources */,
+				4C55542D1CE4D49100C10364 /* GreatWall.png in Resources */,
+				4C55542F1CE4D49100C10364 /* MountFuji.png in Resources */,
+				4C5554421CE4DEFC00C10364 /* leaningPurple.png in Resources */,
+				4C55543F1CE4DEFC00C10364 /* fujiPurple.png in Resources */,
 				4CCEF5B21CB6D1660059017C /* Main.storyboard in Resources */,
 				D2CC8EDB1CE2E23700D51F10 /* MtEverest.png in Resources */,
+				4C55543E1CE4DEFC00C10364 /* everestGreen.png in Resources */,
+				4C55542C1CE4D49100C10364 /* AppalachainTrail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +267,94 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		4C5554221CE4D49100C10364 /* AppalachainTrail.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5554231CE4D49100C10364 /* Base */,
+			);
+			name = AppalachainTrail.png;
+			sourceTree = "<group>";
+		};
+		4C5554241CE4D49100C10364 /* GreatWall.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5554251CE4D49100C10364 /* Base */,
+			);
+			name = GreatWall.png;
+			sourceTree = "<group>";
+		};
+		4C5554261CE4D49100C10364 /* Hollywood.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5554271CE4D49100C10364 /* Base */,
+			);
+			name = Hollywood.png;
+			sourceTree = "<group>";
+		};
+		4C5554281CE4D49100C10364 /* MountFuji.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5554291CE4D49100C10364 /* Base */,
+			);
+			name = MountFuji.png;
+			sourceTree = "<group>";
+		};
+		4C55542A1CE4D49100C10364 /* Pisa.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C55542B1CE4D49100C10364 /* Base */,
+			);
+			name = Pisa.png;
+			sourceTree = "<group>";
+		};
+		4C5554311CE4DEFC00C10364 /* appTrailRed.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5554321CE4DEFC00C10364 /* Base */,
+			);
+			name = appTrailRed.png;
+			sourceTree = "<group>";
+		};
+		4C5554331CE4DEFC00C10364 /* everestGreen.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5554341CE4DEFC00C10364 /* Base */,
+			);
+			name = everestGreen.png;
+			sourceTree = "<group>";
+		};
+		4C5554351CE4DEFC00C10364 /* fujiPurple.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5554361CE4DEFC00C10364 /* Base */,
+			);
+			name = fujiPurple.png;
+			sourceTree = "<group>";
+		};
+		4C5554371CE4DEFC00C10364 /* gWallRed.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C5554381CE4DEFC00C10364 /* Base */,
+			);
+			name = gWallRed.png;
+			sourceTree = "<group>";
+		};
+		4C5554391CE4DEFC00C10364 /* hollywoodBlue.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C55543A1CE4DEFC00C10364 /* Base */,
+			);
+			name = hollywoodBlue.png;
+			sourceTree = "<group>";
+		};
+		4C55543B1CE4DEFC00C10364 /* leaningPurple.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4C55543C1CE4DEFC00C10364 /* Base */,
+			);
+			name = leaningPurple.png;
+			sourceTree = "<group>";
+		};
 		4CCEF5B01CB6D1660059017C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

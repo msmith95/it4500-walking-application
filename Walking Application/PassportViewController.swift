@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import CoreData
 
 private let reuseIdentifier = "passportCell"
 
 class PassportViewController: UICollectionViewController {
+    
+    let dp = DataPasser()
+    var passportArray = [NSManagedObject]?()
+    var images = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = UIColor(red: 0.686, green:0.89, blue:0.0078, alpha:1.0)
+        passportArray = dp.loadPassports()
+        
+        images = ["leaningPurple.png", "everestGreen.png", "hollywoodBlue.png", "fujiPurple.png", "appTrailRed.png", "gWallRed.png"]
+        
+        print(passportArray?.count)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -45,19 +55,21 @@ class PassportViewController: UICollectionViewController {
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return (passportArray?.count)!
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
-    
-        // Configure the cell
+        
+        let imageView = cell.viewWithTag(5) as! UIImageView
+        let id = passportArray![indexPath.row].valueForKey("journeyId") as! Int
+        imageView.image = UIImage(named: images[id])
     
         return cell
     }

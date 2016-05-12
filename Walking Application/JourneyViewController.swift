@@ -75,6 +75,7 @@ class JourneyViewController: UIViewController {
                 let alert = UIAlertController(title: "Journey Completed", message: "A stamp has been added to your passport.  Go out there and start another", preferredStyle: UIAlertControllerStyle.Alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: {
                     (alertAction) -> Void in
+                    self.completeJourney()
                 }))
                 self.presentViewController(alert, animated: true, completion: nil)
             }
@@ -193,6 +194,10 @@ class JourneyViewController: UIViewController {
         print(stepsTaken)
         print(totalSteps)
         print(stepsTaken!/totalSteps!)
+    }
+    
+    func completeJourney(){
+        dp.savePassport(id!, journeyID: id!, timeToFinish: id!)
     }
 }
 

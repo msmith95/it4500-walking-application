@@ -90,6 +90,8 @@ class DataPasser: NSObject {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         
+        passPort = nil
+        
         if passPort == nil {
             let passportEntity =  NSEntityDescription.entityForName("Passport", inManagedObjectContext: managedContext)
             passPort = NSManagedObject(entity: passportEntity!, insertIntoManagedObjectContext:managedContext)
@@ -98,7 +100,7 @@ class DataPasser: NSObject {
         passPort?.setValue(completedJourney, forKey: "CompletedJourneys")
         passPort?.setValue(journeyID, forKey: "journeyId")
         passPort?.setValue(journeyID, forKey: "journeyId")
-        passPort?.setValue(timeToFinish, forKey: "timeToFinishJounrey")
+        passPort?.setValue(timeToFinish, forKey: "timeToFinishJourney")
         
         // Complete save and handle potential error
         do {
@@ -107,6 +109,31 @@ class DataPasser: NSObject {
             print("Could not save \(error), \(error.userInfo)")
         }
         
+    }
+    
+    
+    var passportArray = [NSManagedObject]?()
+    
+    func loadPassports() -> [NSManagedObject]{
+        // Load saved passport entities from core data
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let managedContext = appDelegate.managedObjectContext
+        let fetchRequest = NSFetchRequest(entityName:"Passport")
+        
+        do {
+            let fetchedResults =
+                try managedContext.executeFetchRequest(fetchRequest) as? [NSManagedObject]
+            
+            if let results = fetchedResults {
+                passportArray = results
+                return passportArray!
+            } else {
+                print("Could not fetch notes")
+            }
+        } catch {
+            return []
+        }
+        return []
     }
     
 }
